@@ -10,6 +10,8 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 
 **Arresto — arrest.** Incautación sustancial de una persona que normalmente exige causa probable. Véase Capítulo 2.
 
+**Arma de fuego — firearm.** Herramienta profesional peligrosa sujeta a manejo y almacenamiento seguros, autoridad legal, política y rendición de cuentas. Véanse Capítulos 10–11.
+
 **Cadena de custodia — chain of custody.** Historial documentado de qué evidencia se recolectó, quién la manejó, cuándo cambió de manos, dónde se almacenó y cómo se protegió su integridad. Véase Capítulo 6.
 
 **Cadena de mando — chain of command.** Línea de agencia para dirección, supervisión, información y elevación. Véase Capítulo 1.
@@ -24,9 +26,17 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 
 **Conducción temeraria — reckless driving.** Delito de tránsito definido por la ley de Virginia; no es sinónimo de toda imprudencia o exceso de velocidad. Véase Capítulo 5.
 
+**Custodia — custody.** Restricción lícita de la libertad que genera deberes sobre seguridad, derechos, atención, bienes, documentación y transferencia; no es sinónimo automático de detención o arresto. Véase Capítulo 8.
+
 **Despacho — dispatch.** Función que coordina llamadas, información y recursos según procedimientos locales; *dispatch* es el término profesional habitual. Véase Capítulo 3.
 
 **Desescalamiento — de-escalation.** Comunicación, tiempo, distancia, recursos y tácticas factibles para reducir amenaza o intensidad dentro de ley y política. Véase Capítulo 3.
+
+**Deber de intervenir — duty to intervene.** Obligación respecto de la fuerza ilícita de otro oficial cuyos elementos exactos dependen de la ley y política controlantes. Véase Capítulo 9.
+
+**Decisión de disparar o no disparar — shoot/no-shoot decision.** Determinación de si disparar está jurídicamente justificado; no equivale a puntería. Véase Capítulo 11.
+
+**Detención — detention.** Restricción limitada de libertad que exige su propia justificación y no constituye automáticamente arresto. Véanse Capítulos 2 y 8.
 
 **Detención investigativa — investigative detention.** Incautación breve respaldada por sospecha razonable y limitada por su justificación. Véase Capítulo 2.
 
@@ -48,6 +58,8 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 
 **Intervención en crisis — crisis intervention.** Comunicación, evaluación de seguridad, criterio jurídico y conexión coordinada con atención apropiada; no equivale automáticamente a custodia de emergencia. Véase Capítulo 7.
 
+**Fuerza letal — deadly force.** Fuerza con significado y límites especiales bajo la ley y política controlantes; no es sinónimo automático de toda presencia de un arma. Véanse Capítulos 9–11.
+
 **Investigación preliminar — preliminary investigation.** Identificación, recopilación inicial de hechos, preservación, entrevistas, pistas y documentación que encuadran decisiones posteriores. Véanse Capítulos 4 y 6.
 
 **Llamada de servicio — call for service.** Solicitud o informe que motiva atención policial; la clasificación inicial puede cambiar y no prueba lo sucedido. Véase Capítulo 4.
@@ -67,6 +79,18 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 **Patrullaje — patrol.** Servicio policial general en un área o función asignada; *patrulla* puede nombrar una unidad o vehículo. Véase Capítulo 4.
 
 **Razonabilidad objetiva — objective reasonableness.** Estándar basado en circunstancias conocidas, no solo en creencia subjetiva. Véase Capítulo 2.
+
+**Incidente crítico — critical incident.** Hecho grave con posibles consecuencias jurídicas, investigativas, operativas y de bienestar; la definición de cada agencia puede variar. Véase Capítulo 11.
+
+**Medio de sujeción — restraint.** Equipo o control autorizado que limita movimiento y genera deberes continuos de seguridad, dignidad, vigilancia y atención; nunca es castigo. Véase Capítulo 8.
+
+**Cualificación con armas de fuego — firearms qualification.** Desempeño documentado bajo un estándar controlante; no concede por sí solo autorización legal para disparar ni demuestra juicio completo. Véase Capítulo 10.
+
+**Resistencia — resistance.** Descriptor dependiente de ley, entrenamiento y política que debe vincularse a conducta observable, no a una etiqueta aislada. Véanse Capítulos 8–9.
+
+**Tácticas defensivas — defensive tactics.** Campo supervisado de destrezas lícitas de control y seguridad; no es un manual de combate. Véase Capítulo 8.
+
+**Amenaza — threat.** Peligro valorado mediante hechos articulables y contexto; una posibilidad o un objeto desconocido no constituyen confirmación. Véase Capítulo 11.
 
 **Registro e incautación — search and seizure.** Conceptos de la Cuarta Enmienda relativos a ciertas intrusiones en privacidad o áreas protegidas e interferencias con personas o propiedad. Véase Capítulo 2.
 
