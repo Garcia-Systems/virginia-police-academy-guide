@@ -9,6 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 W,H=612,792; LEFT,RIGHT,TOP,BOTTOM=58,58,60,52
 URL_RE=re.compile(r'\[([^]]+)\]\(([^)]+)\)|(https?://[^\s<>]+)')
 IMAGE_RE=re.compile(r'^!\[([^]]*)\]\(([^)]+\.png)\)$', re.IGNORECASE)
+LINK_BLUE=(0,0,238/255)
 
 def load_manifest():
  spec=importlib.util.spec_from_file_location('manifest',ROOT/'book_manifest.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); return mod.BOOKS
@@ -147,8 +148,8 @@ class Renderer:
   self.page.ops.append(f'BT /{font} {size:.1f} Tf {x:.1f} {self.y:.1f} Td ({esc(plain(text))}) Tj ET')
   if url: self.page.links.append((x,self.y-2,min(W-RIGHT,x+width(plain(text),size,bold)),self.y+size,'uri',url))
   self.y-=gap
- def paragraph(self,text,quote=False,bullet=False,internal=None):
-  indent=16 if quote or bullet else 0; prefix='• ' if bullet else ('“' if quote else '')
+ def markdown_spans(self,text):
+  """Convert supported Markdown links and bare URLs to text/link spans."""
   spans=[]; pos=0
   for m in URL_RE.finditer(text):
    spans.append((clean(text[pos:m.start()]),None))
@@ -164,18 +165,32 @@ class Renderer:
     link=('goto',self.file_dest.get(candidate)) if candidate in self.file_dest else None
    spans.append((clean(label),link)); spans.append((suffix,None)); pos=m.end()
   spans.append((clean(text[pos:]),None))
+  return spans
+ def styled_line(self,text,runs,x,size,bold=False):
+  """Render one measured line, changing color without resetting text position."""
+  font='F2' if bold else 'F1'; parts=[]; pos=0
+  for start,end,link in runs:
+   if start>pos: parts.append(f'0 g ({esc(text[pos:start])}) Tj')
+   parts.append(f'{LINK_BLUE[0]:.3f} {LINK_BLUE[1]:.3f} {LINK_BLUE[2]:.3f} rg ({esc(text[start:end])}) Tj')
+   link_x=x+width(text[:start],size,bold)
+   self.page.links.append((link_x,self.y-2,link_x+width(text[start:end],size,bold),self.y+size,*link))
+   pos=end
+  if pos<len(text) or not parts: parts.append(f'0 g ({esc(text[pos:])}) Tj')
+  # Every segment remains in one PDF text object, so each Tj advances the same
+  # continuous Helvetica text position used by the line-oriented renderer.
+  self.page.ops.append(f'BT /{font} {size:.1f} Tf {x:.1f} {self.y:.1f} Td '+ ' '.join(parts)+' ET')
+ def styled_block(self,text,size=10.5,bold=False,indent=0,gap=14,prefix='',internal=None):
+  spans=self.markdown_spans(text)
   if prefix: spans.insert(0,(prefix,None))
   if internal: spans=[(''.join(s for s,_ in spans),('goto',internal))]
-  x=LEFT+indent; maxw=W-RIGHT-x
-  for line,runs in wrap_spans(spans,10.5,maxw):
-   if self.y-14<BOTTOM: self.new(self.page.head)
-   # Render an entire visual line in one text object.  Its ordinary spaces are
-   # interpreted by Helvetica; only link rectangles require width offsets.
-   self.page.ops.append(f'BT /F1 10.5 Tf {x:.1f} {self.y:.1f} Td ({esc(line)}) Tj ET')
-   for start,end,link in runs:
-    link_x=x+width(line[:start],10.5)
-    self.page.links.append((link_x,self.y-2,link_x+width(line[start:end],10.5),self.y+10.5,*link))
-   self.y-=14
+  x=LEFT+indent
+  for line,runs in wrap_spans(spans,size,W-RIGHT-x):
+   if self.y-gap<BOTTOM: self.new(self.page.head)
+   self.styled_line(line,runs,x,size,bold)
+   self.y-=gap
+ def paragraph(self,text,quote=False,bullet=False,internal=None):
+  indent=16 if quote or bullet else 0; prefix='• ' if bullet else ('“' if quote else '')
+  self.styled_block(text,indent=indent,prefix=prefix,internal=internal)
   self.y-=5
  def image(self,path):
   image=read_png(path)
@@ -191,12 +206,12 @@ class Renderer:
   self.page.ops.append(f'q {draw_w:.2f} 0 0 {draw_h:.2f} {x:.2f} {y:.2f} cm /{name} Do Q')
   self.y=y-14
  def document(self,path):
-  lines=path.read_text(encoding='utf-8').splitlines(); title=plain(lines[0][2:])
+  lines=path.read_text(encoding='utf-8').splitlines(); raw_title=lines[0][2:]; title=plain(raw_title)
   self.new(title)
   self.source_path=path.parent; self.toc=path.stem=='CONTENTS'
   dest=self.file_dest[path.resolve()]; self.page.destinations.append((dest,self.y))
   # The first H1 was formerly consumed as metadata. Render the canonical title.
-  for l in wrap(title,20,W-LEFT-RIGHT,True): self.line(l,20,True,gap=25)
+  self.styled_block(raw_title,20,True,gap=25)
   self.y-=8
   para=[]
   def flush():
@@ -213,7 +228,7 @@ class Renderer:
     self.image(image_path)
    elif s.startswith('#'):
     flush(); n=len(s)-len(s.lstrip('#')); text=s[n:].strip(); sizes={1:20,2:14,3:11.5}; self.y-=8 if n<3 else 2
-    for l in wrap(text,sizes.get(n,11),W-LEFT-RIGHT,True): self.line(l,sizes.get(n,11),True,gap=sizes.get(n,11)+5)
+    size=sizes.get(n,11); self.styled_block(text,size,True,gap=size+5)
     self.y-=5
    elif s.startswith('> '): flush(); self.paragraph(s[2:],quote=True)
    elif re.match(r'^[-*] ',s):
