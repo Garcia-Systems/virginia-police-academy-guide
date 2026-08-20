@@ -28,5 +28,5 @@
 - Capítulo 19: Semana 19: Finalización de la Academia y Graduación
 ## Después de la Academia
 
-- Capítulo 20: Entrenamiento de Campo: Aprender a Trabajar como Oficial
-- Capítulo 21: El Primer Año: De Recluta a Oficial de Policía
+- Capítulo 20: Después de la Academia: Entrenamiento de Campo
+- Capítulo 21: El Primer Año: De Recluta a Agente en Funciones
