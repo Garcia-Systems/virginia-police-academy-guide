@@ -1,5 +1,16 @@
 # Shared Research Log
 
+## 2026-08-20 — Adaptación española de los Capítulos 16–19
+
+- **Base canónica:** se adaptaron íntegramente los Capítulos 16–19 ingleses revisados el 20 de agosto de 2026. La edición española conserva la secuencia editorial, las limitaciones sobre HRCJTA y la separación entre finalización de la academia, certificación, empleo y entrenamiento de campo.
+- **Escenarios y aprendizaje:** se eligieron *escenario integrado* y *capacitación basada en escenarios*. *Retroalimentación*, *corrección*, *evaluación* e *instrucción correctiva o remediación* designan procesos distintos; ninguna formulación promete una reevaluación.
+- **Desempeño bajo presión:** *memoria de trabajo*, *carga cognitiva* y *estrechamiento de la atención* conservan los calificadores científicos del inglés. Se distinguen error de aprendizaje, deficiencia, competencia demostrada e incumplimiento de una norma.
+- **Pruebas y certificación:** se eligió *cualificación* para *qualification* y se explicó que no significa una nota ni pericia completa. *Examen escrito*, *evaluación de destrezas*, *cualificación*, *examen de certificación*, finalización de la academia y certificación no se usan como sinónimos.
+- **Vigencia:** el Capítulo 18 conserva por separado el requisito vigente al 20 de agosto de 2026 y los materiales futuros adoptados para el **1 de enero de 2027**. Se mantiene la necesidad de reabrir los materiales de DCJS y verificar orientación de transición antes de publicación.
+- **Transición profesional:** se adoptaron *persona graduada de la academia*, *agente en período probatorio*, *entrenamiento de campo* y *Oficial de Entrenamiento de Campo (FTO)*, sin inferir duración, fases ni criterios locales de James City County.
+- **Revisión de continuidad:** los Capítulos 0–19 españoles tienen títulos y secciones sustantivas correspondientes, sin marcadores de contenido. Se revisaron detención, arresto, custodia, causa probable, sospecha razonable, uso de la fuerza, desescalamiento, patrullaje, informe, evidencia, cualificación, certificación y entrenamiento de campo; no se justificó una reescritura general de capítulos anteriores.
+- **Fuentes y correcciones inglesas:** se conservaron nombres oficiales, títulos, citas y URL de la edición canónica. La adaptación no reveló un error inglés verificable y no se añadieron fuentes suplementarias en español.
+
 ## 2026-08-20 — English Chapters 16–19: integration, evaluation, and academy completion
 
 - **Scope:** scenario-based integration; incomplete information and articulation; human performance under pressure; remediation; compulsory minimum training; the Virginia certification examination; academy completion/certification distinctions; graduation; and transition to field training.

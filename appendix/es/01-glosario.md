@@ -20,6 +20,14 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 
 **Certificación — certification.** Condición estatal tras cumplir requisitos laborales, formativos y administrativos; no es solo un diploma. Véase Capítulo 0.
 
+**Examen de certificación — certification examination.** Examen exigido dentro del marco de certificación de DCJS; no es sinónimo de toda prueba de la academia. Véase Capítulo 18.
+
+**Competencia demostrada — competency.** Capacidad acreditada para cumplir un resultado de desempeño definido; no equivale a jurisdicción, autoridad ni pericia completa. Véanse Capítulos 17–18.
+
+**Corrección — correction.** Ajuste específico de un error durante el aprendizaje; se distingue de retroalimentación, evaluación y remediación. Véanse Capítulos 16–17.
+
+**Cualificación — qualification.** Verificación de un mínimo definido bajo condiciones prescritas; en este contexto no significa una simple nota ni dominio completo. Véase Capítulo 18.
+
 **Citación — citation.** Aviso escrito de una presunta infracción en el uso común; debe emplearse el nombre exacto del documento de Virginia y distinguirse de *summons*. Véase Capítulo 5.
 
 **Confidencialidad — confidentiality.** Protección de información cuya divulgación no autorizan ley o política. Véase Capítulo 1.
@@ -52,6 +60,14 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 
 **Entrenamiento de campo — field training.** Aplicación estructurada y supervisada del aprendizaje en la agencia. Véase Capítulo 0.
 
+**Escenario integrado — integrated scenario.** Actividad controlada que exige combinar varias áreas de conocimiento y desempeño; no implica una secuencia táctica ni un ejercicio específico de HRCJTA. Véase Capítulo 16.
+
+**Capacitación basada en escenarios — scenario-based training.** Instrucción o evaluación organizada en torno a un problema realista; la autoridad aplicable determina si una actividad enseña o evalúa. Véase Capítulo 16.
+
+**Evaluación — evaluation.** Comparación formal del conocimiento o desempeño con criterios definidos; no es por sí sola corrección, retroalimentación ni remediación. Véanse Capítulos 16–18.
+
+**Deficiencia — deficiency.** Diferencia demostrada entre el desempeño y un requisito; no toda deficiencia admite remediación o reevaluación. Véase Capítulo 17.
+
 **Informe policial — police report.** Registro que atribuye y organiza observaciones, declaraciones, decisiones, evidencia y resultados. Véase Capítulo 3.
 
 **Informe de choque — crash report.** Registro oficial exigido en las circunstancias definidas por ley y procedimiento; *choque* evita presumir causalidad. Véase Capítulo 5.
@@ -71,6 +87,18 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 **Orden de protección — protective order.** Orden judicial con protecciones específicas; deben verificarse clase, términos, notificación, vigencia y estatus exactos. Véase Capítulo 7.
 
 **Oficial de entrenamiento de campo — Field Training Officer (FTO).** Agente que orienta y evalúa la aplicación práctica de la nueva agente. Véase Capítulo 0.
+
+**Agente en período probatorio — probationary officer.** Categoría laboral o de situación definida por el derecho y las reglas de la agencia; no significa automáticamente recluta sin certificación. Véase Capítulo 19.
+
+**Persona graduada de la academia — academy graduate.** Persona que completó los requisitos definidos de la academia; el término por sí solo no confirma toda certificación, situación laboral o autoridad independiente. Véase Capítulo 19.
+
+**Graduación — graduation.** Reconocimiento de haber completado la academia, a menudo ceremonial; no sustituye requisitos jurídicos o administrativos. Véase Capítulo 19.
+
+**Reevaluación — reassessment.** Evaluación posterior que solo existe cuando la norma o regla aplicable la permite. Véanse Capítulos 16–18.
+
+**Remediación / instrucción correctiva — remediation.** Instrucción o práctica adicional autorizada para atender una deficiencia demostrada; no promete repetición de prueba, número fijo de intentos ni exención de un requisito. Véanse Capítulos 16–18.
+
+**Retroalimentación — feedback.** Información que compara el desempeño con lo esperado e identifica un ajuste posterior; no equivale automáticamente a evaluación formal o remediación. Véanse Capítulos 16–17.
 
 **Orden judicial — warrant.** Autorización judicial que normalmente exige causa probable, juramento o afirmación y particularidad. Véase Capítulo 2.
 
