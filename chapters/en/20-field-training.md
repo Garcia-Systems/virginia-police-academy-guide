@@ -1,5 +1,7 @@
 # Chapter 20 — After the Academy: Field Training
 
+![Conceptual diagram for Chapter 20](../../images/chapters/en/20.png)
+
 > **Research and local-practice limitation.** Sources were reviewed for the August 20, 2026 edition. Public James City County and HRCJTA materials reviewed did not establish JCCPD's field-training duration, phases, rating form, shift rotation, report system, or release criteria. This chapter therefore distinguishes Virginia requirements and verified public context from general field-training concepts. Current agency policy and instruction control.
 
 ## Opening

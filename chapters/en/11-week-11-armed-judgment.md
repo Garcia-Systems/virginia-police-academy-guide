@@ -1,5 +1,7 @@
 # Chapter 11 — Week 11: Armed Decision-Making & Tactical Judgment
 
+![Conceptual diagram for Chapter 11](../../images/chapters/en/11.png)
+
 > **Editorial sequence and research status.** Week 11 is this book's learning sequence, not a published HRCJTA schedule or JCCPD tactical procedure. Sources were reviewed for the August 20, 2026 edition. Here, **tactical judgment** means lawful assessment, restraint, communication, surroundings, and accountability—not combat instruction.
 
 ## Opening

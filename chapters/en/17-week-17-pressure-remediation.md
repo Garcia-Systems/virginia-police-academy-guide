@@ -1,5 +1,7 @@
 # Chapter 17 — Week 17: Judgment Under Pressure & Remediation
 
+![Conceptual diagram for Chapter 17](../../images/chapters/en/17.png)
+
 > **Editorial sequence and local-policy limitation.** Week 17 is this book's learning sequence, not a published HRCJTA schedule. Sources were reviewed for the August 20, 2026 edition. No public HRCJTA remediation, retest, attempt-limit, or dismissal rule was located. State standards, academy rules, agency policy, and the directions given to the recruit control.
 
 ## Opening

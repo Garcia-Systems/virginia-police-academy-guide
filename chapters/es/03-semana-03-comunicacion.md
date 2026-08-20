@@ -1,5 +1,7 @@
 # Capítulo 3 — Semana 3: Comunicación, radio y redacción de informes
 
+![Diagrama conceptual del Capítulo 3](../../images/chapters/es/03.png)
+
 > **BORRADOR INVESTIGADO — REVISIÓN FACTUAL SOLICITADA.** Fuentes comprobadas al 19 de agosto de 2026. «Semana 3» es editorial. Ninguna fuente pública revisada estableció códigos de radio, formato de informe o procedimientos de comunicación de JCCPD; corresponden a la agencia y la academia.
 
 ## Apertura

@@ -1,5 +1,7 @@
 # Capítulo 1 — Semana 1: La profesión, la cultura de la academia y las expectativas
 
+![Diagrama conceptual del Capítulo 1](../../images/chapters/es/01.png)
+
 > **BORRADOR INVESTIGADO — REVISIÓN FACTUAL SOLICITADA.** Fuentes comprobadas al 19 de agosto de 2026. «Semana 1» es una ubicación editorial; no describe la secuencia ni las reglas internas de HRCJTA.
 
 ## Apertura

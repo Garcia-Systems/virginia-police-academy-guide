@@ -1,5 +1,7 @@
 # Capítulo 8 — Semana 8: Tácticas defensivas y custodia
 
+![Diagrama conceptual del Capítulo 8](../../images/chapters/es/08.png)
+
 > **Secuencia editorial y estado de la investigación.** La Semana 8 pertenece al recorrido didáctico de este libro; no afirma cuál es el calendario de HRCJTA ni el procedimiento de JCCPD. Las autoridades se revisaron para la edición del 20 de agosto de 2026. Rigen la ley vigente, la instrucción de la academia, la política de la agencia, la supervisión y las indicaciones médicas. Este capítulo explica responsabilidades, no técnicas de control físico.
 
 ## Apertura

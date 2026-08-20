@@ -1,5 +1,7 @@
 # Capítulo 10 — Semana 10: Fundamentos y seguridad de las armas de fuego
 
+![Diagrama conceptual del Capítulo 10](../../images/chapters/es/10.png)
+
 > **Secuencia editorial y estado de la investigación.** La Semana 10 pertenece a la secuencia del libro; no afirma cuál es el calendario de polígono de HRCJTA ni la política de equipo de JCCPD. Las fuentes se revisaron para la edición del 20 de agosto de 2026. Rigen instructores cualificados, reglas actuales del polígono, orientación sobre equipo asignado, ley y política. Este capítulo centrado en seguridad no contiene ejercicios de tiro ni instrucción sobre letalidad.
 
 ## Apertura

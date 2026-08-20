@@ -1,5 +1,7 @@
 # Capítulo 5 — Semana 5: Leyes de tránsito, paradas y respuesta a choques
 
+![Diagrama conceptual del Capítulo 5](../../images/chapters/es/05.png)
+
 > **Secuencia editorial.** La «Semana 5» pertenece al plan de aprendizaje de este libro; no afirma nada sobre el calendario de HRCJTA ni el procedimiento de tránsito de JCCPD. La ley de Virginia citada aquí se revisó como vigente el 20 de agosto de 2026; las agentes deben aplicar la ley, política e instrucción actuales.
 
 ## Apertura

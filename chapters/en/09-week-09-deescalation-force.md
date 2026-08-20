@@ -1,5 +1,7 @@
 # Chapter 9 — Week 9: De-escalation & Use-of-Force Decisions
 
+![Conceptual diagram for Chapter 9](../../images/chapters/en/09.png)
+
 > **Editorial sequence and research status.** Week 9 is this book's sequence, not a published HRCJTA schedule or JCCPD force policy. Authorities were reviewed for the August 20, 2026 edition. Force law changes and is intensely fact-dependent; current law, DCJS instruction, agency policy, and legal advice control. No physical technique is taught here.
 
 ## Opening

@@ -1,5 +1,7 @@
 # Capítulo 7 — Semana 7: Víctimas, respuesta a crisis y poblaciones vulnerables
 
+![Diagrama conceptual del Capítulo 7](../../images/chapters/es/07.png)
+
 > **Secuencia editorial.** La Semana 7 pertenece a la secuencia del libro; no representa el calendario de HRCJTA ni la política de respuesta de JCCPD. Las referencias legales de Virginia se revisaron como vigentes el 20 de agosto de 2026; las decisiones dependientes de hechos requieren ley, política y supervisión actuales, además de profesionales colaboradores.
 
 ## Apertura

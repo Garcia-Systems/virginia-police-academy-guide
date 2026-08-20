@@ -1,5 +1,7 @@
 # Capítulo 19 — Semana 19: Finalización de la Academia y Graduación
 
+![Diagrama conceptual del Capítulo 19](../../images/chapters/es/19.png)
+
 > **Secuencia editorial y límite sobre la ceremonia.** La Semana 19 completa el recorrido editorial de la academia en este libro; no es un calendario publicado de la semana final de HRCJTA. Las fuentes se revisaron para la edición del 20 de agosto de 2026. Los materiales públicos consultados no establecieron la ceremonia vigente de HRCJTA ni sus procedimientos familiares, vestimenta, premios, entrega de insignias o secuencia administrativa final. Este capítulo no los inventa.
 
 ## Apertura

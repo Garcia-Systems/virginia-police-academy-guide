@@ -1,5 +1,7 @@
 # Capítulo 20 — Después de la Academia: Entrenamiento de Campo
 
+![Diagrama conceptual del Capítulo 20](../../images/chapters/es/20.png)
+
 > **Limitación de la investigación y de la práctica local.** Las fuentes se revisaron para la edición del 20 de agosto de 2026. Los materiales públicos de James City County y HRCJTA revisados no establecen la duración, las fases, el formulario de evaluación, la rotación de turnos, el sistema de informes ni los criterios de finalización del entrenamiento de campo de JCCPD. Por ello, este capítulo distingue los requisitos de Virginia y el contexto público verificado de los conceptos generales del entrenamiento de campo. Rigen la política y la instrucción vigentes de la agencia.
 
 ## Apertura

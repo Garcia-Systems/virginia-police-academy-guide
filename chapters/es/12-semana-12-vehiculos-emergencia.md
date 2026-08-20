@@ -1,5 +1,7 @@
 # Capítulo 12 — Semana 12: Operación de vehículos de emergencia
 
+![Diagrama conceptual del Capítulo 12](../../images/chapters/es/12.png)
+
 > **Secuencia editorial y estado de la investigación.** La Semana 12 pertenece al recorrido didáctico de este libro; no es un calendario publicado de HRCJTA ni una categoría de respuesta de JCCPD. Las fuentes se revisaron para la edición del 20 de agosto de 2026. Rigen la ley vigente, la instrucción de la academia y la política de la agencia, no este panorama general.
 
 ## Apertura

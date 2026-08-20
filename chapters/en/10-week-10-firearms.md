@@ -1,5 +1,7 @@
 # Chapter 10 — Week 10: Firearms Fundamentals & Safety
 
+![Conceptual diagram for Chapter 10](../../images/chapters/en/10.png)
+
 > **Editorial sequence and research status.** Week 10 is this book's sequence, not a statement of HRCJTA's range calendar or JCCPD equipment policy. Sources were reviewed for the August 20, 2026 edition. Firearms work requires qualified instructors, current range rules, issued-equipment guidance, law, and agency policy. This safety-centered chapter contains no shooting drill or lethality instruction.
 
 ## Opening

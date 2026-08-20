@@ -1,5 +1,7 @@
 # Chapter 2 — Week 2: Constitutional Law & Police Authority
 
+![Conceptual diagram for Chapter 2](../../images/chapters/en/02.png)
+
 > **RESEARCH DRAFT — FACTUAL REVIEW REQUESTED.** Authorities were checked as of August 19, 2026. “Week 2” is an editorial learning sequence, not an HRCJTA schedule. This chapter is education, not legal advice; current instruction, binding precedent, Virginia law, agency policy, prosecutors, and courts govern practice.
 
 ## Opening
