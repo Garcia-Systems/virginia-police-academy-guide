@@ -27,15 +27,104 @@ def validate(cfg,lang):
 def esc(s): return s.replace('\\','\\\\').replace('(','\\(').replace(')','\\)').replace('\r','').encode('cp1252','replace').decode('latin1')
 def clean(s): return re.sub(r'[*_`]', '', s)
 def plain(s): return clean(URL_RE.sub(lambda m:m.group(1) or m.group(3),s)).strip()
-def width(s,size,bold=False): return len(s)*size*(.54 if not bold else .57)
+# Character widths from Adobe's Helvetica and Helvetica-Bold AFM files.  PDF
+# base-14 font widths are expressed in thousandths of an em.  The renderer uses
+# WinAnsiEncoding, so accented Latin letters have the width of their underlying
+# Helvetica glyph rather than an estimated average-character width.
+_HELVETICA_ASCII=(
+ 278,278,355,556,556,889,667,191,333,333,389,584,278,333,278,278,
+ 556,556,556,556,556,556,556,556,556,556,278,278,584,584,584,556,
+ 1015,667,667,722,722,667,611,778,722,278,500,667,556,833,722,778,
+ 667,778,722,667,611,722,667,944,667,667,611,278,278,278,469,556,
+ 333,556,556,500,556,556,278,556,556,222,222,500,222,833,556,556,
+ 556,556,333,500,278,556,500,722,500,500,500,334,260,334,584)
+_HELVETICA_BOLD_ASCII=(
+ 278,333,474,556,556,889,722,238,333,333,389,584,278,333,278,278,
+ 556,556,556,556,556,556,556,556,556,556,333,333,584,584,584,611,
+ 975,722,722,722,722,667,611,778,722,278,556,722,611,833,722,778,
+ 667,778,722,667,611,722,667,944,667,667,611,333,278,333,584,556,
+ 333,556,611,556,611,556,333,611,611,278,278,556,278,889,611,611,
+ 611,611,389,556,333,611,556,778,556,556,500,389,280,389,584)
+_EXTRA_WIDTHS={
+ '€':556,'‚':222,'ƒ':556,'„':333,'…':1000,'†':556,'‡':556,'ˆ':333,
+ '‰':1000,'Š':667,'‹':333,'Œ':1000,'Ž':611,'‘':222,'’':222,'“':333,
+ '”':333,'•':350,'–':556,'—':1000,'˜':333,'™':1000,'š':500,'›':333,
+ 'œ':944,'ž':500,'Ÿ':667,'¡':333,'¿':611,
+}
+_EXTRA_BOLD_WIDTHS={**_EXTRA_WIDTHS,'‚':278,'„':500,'Š':667,'‹':333,
+ 'Œ':1000,'‘':278,'’':278,'“':500,'”':500,'•':350,'š':556,'œ':944}
+_BASE_LETTER={
+ **{c:'A' for c in 'ÀÁÂÃÄÅ'},**{c:'a' for c in 'àáâãäå'},
+ 'Ç':'C','ç':'c',**{c:'E' for c in 'ÈÉÊË'},**{c:'e' for c in 'èéêë'},
+ **{c:'I' for c in 'ÌÍÎÏ'},**{c:'i' for c in 'ìíîï'},'Ð':'D','ð':'d',
+ 'Ñ':'N','ñ':'n',**{c:'O' for c in 'ÒÓÔÕÖØ'},**{c:'o' for c in 'òóôõöø'},
+ **{c:'U' for c in 'ÙÚÛÜ'},**{c:'u' for c in 'ùúûü'},'Ý':'Y','ý':'y','ÿ':'y',
+ 'Þ':'P','þ':'p',
+}
+_EXTRA_WIDTHS.update({'Æ':1000,'æ':889,'ß':611})
+_EXTRA_BOLD_WIDTHS.update({'Æ':1000,'æ':889,'ß':611})
+def glyph_width(char,bold=False):
+ table=_HELVETICA_BOLD_ASCII if bold else _HELVETICA_ASCII
+ if ' '<=char<='~': return table[ord(char)-32]
+ char=_BASE_LETTER.get(char,char)
+ if ' '<=char<='~': return table[ord(char)-32]
+ return (_EXTRA_BOLD_WIDTHS if bold else _EXTRA_WIDTHS).get(char,556)
+def width(s,size,bold=False): return sum(glyph_width(c,bold) for c in s)*size/1000
 def wrap(s,size,maxw,bold=False):
  words=s.split(); out=[]; cur=''
  for word in words:
   nxt=(cur+' '+word).strip()
   if cur and width(plain(nxt),size,bold)>maxw: out.append(cur); cur=word
   else: cur=nxt
+  # A single unusually long token must not cross the right margin.
+  while width(plain(cur),size,bold)>maxw:
+   cut=max(i for i in range(1,len(cur)+1) if width(plain(cur[:i]),size,bold)<=maxw)
+   out.append(cur[:cut]); cur=cur[cut:]
  if cur: out.append(cur)
  return out or ['']
+
+def wrap_spans(spans,size,maxw):
+ """Return visual lines and linked character ranges for styled Markdown spans."""
+ chars=[]
+ for text,link in spans:
+  chars.extend((c,link) for c in text)
+ # Markdown paragraph whitespace becomes one ordinary ASCII space.
+ normalized=[]; pending_space=False
+ for char,link in chars:
+  if char.isspace(): pending_space=bool(normalized); continue
+  if pending_space: normalized.append((' ',None)); pending_space=False
+  normalized.append((char,link))
+ lines=[]; line=[]
+ # Keep the link metadata while grouping the normalized characters into words.
+ tokens=[]; token=[]
+ for item in normalized:
+  if item[0]==' ':
+   if token: tokens.append(token); token=[]
+  else: token.append(item)
+ if token: tokens.append(token)
+ for token in tokens:
+  candidate=line+([(' ',None)] if line else [])+token
+  if line and width(''.join(c for c,_ in candidate),size)>maxw:
+   lines.append(line); line=[]
+  if not line and width(''.join(c for c,_ in token),size)>maxw:
+   part=[]
+   for item in token:
+    if part and width(''.join(c for c,_ in part+[item]),size)>maxw:
+     lines.append(part); part=[]
+    part.append(item)
+   line=part
+  else: line=line+([(' ',None)] if line else [])+token
+ if line: lines.append(line)
+ result=[]
+ for items in lines or [[]]:
+  text=''.join(c for c,_ in items); runs=[]; start=0
+  while start<len(items):
+   link=items[start][1]; end=start+1
+   while end<len(items) and items[end][1]==link: end+=1
+   if link: runs.append((start,end,link))
+   start=end
+  result.append((text,runs))
+ return result
 @dataclass
 class Page:
  head:str; ops:list[str]=field(default_factory=list); links:list[tuple]=field(default_factory=list); images:dict[Path,str]=field(default_factory=dict); destinations:list[tuple[str,float]]=field(default_factory=list)
@@ -77,21 +166,16 @@ class Renderer:
   spans.append((clean(text[pos:]),None))
   if prefix: spans.insert(0,(prefix,None))
   if internal: spans=[(''.join(s for s,_ in spans),('goto',internal))]
-  x=LEFT+indent; maxx=W-RIGHT
-  for span,link in spans:
-   for token in re.findall(r'\s+|\S+',span):
-    # Helvetica spaces are 278 units wide. Applying the average-letter width
-    # here made the gaps between separately positioned words look justified.
-    token_width=len(token)*10.5*.278 if token.isspace() else width(token,10.5)
-    if not token.isspace() and x>LEFT+indent and x+token_width>maxx:
-     self.y-=14; x=LEFT+indent
-     if self.y-14<BOTTOM: self.new(self.page.head); x=LEFT+indent
-    if token.isspace() and x==LEFT+indent: continue
-    if not token.isspace():
-     self.page.ops.append(f'BT /F1 10.5 Tf {x:.1f} {self.y:.1f} Td ({esc(token)}) Tj ET')
-     if link: self.page.links.append((x,self.y-2,min(maxx,x+token_width),self.y+10.5,*link))
-    x+=token_width
-  self.y-=14
+  x=LEFT+indent; maxw=W-RIGHT-x
+  for line,runs in wrap_spans(spans,10.5,maxw):
+   if self.y-14<BOTTOM: self.new(self.page.head)
+   # Render an entire visual line in one text object.  Its ordinary spaces are
+   # interpreted by Helvetica; only link rectangles require width offsets.
+   self.page.ops.append(f'BT /F1 10.5 Tf {x:.1f} {self.y:.1f} Td ({esc(line)}) Tj ET')
+   for start,end,link in runs:
+    link_x=x+width(line[:start],10.5)
+    self.page.links.append((link_x,self.y-2,link_x+width(line[start:end],10.5),self.y+10.5,*link))
+   self.y-=14
   self.y-=5
  def image(self,path):
   image=read_png(path)
