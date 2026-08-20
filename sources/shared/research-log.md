@@ -1,5 +1,14 @@
 # Shared Research Log
 
+## 2026-08-20 — Adaptación española de los Capítulos 12–15
+
+- **Base canónica:** se adaptaron íntegramente los Capítulos 12–15 ingleses revisados el 20 de agosto de 2026, sin añadir afirmaciones jurídicas, médicas ni operativas independientes y sin modificar el texto inglés.
+- **Decisiones terminológicas:** se conservaron *due regard*, EPO, PPO, EMS, CPR y AED al introducir sus explicaciones españolas. Se eligieron *procesamiento de ingreso* para *booking*, *magistrado de Virginia* con explicación institucional, *persona bajo custodia* como forma centrada en la persona y *encuentro de alto riesgo* como descripción conceptual, no categoría de agencia.
+- **Revisión de fidelidad:** la comparación jurídica conservó condiciones y salvedades sobre § 46.2-920, autoridad de arresto, excepciones de registro, independencia de magistrados, § 19.2-81.3 y etapas de órdenes de protección. La comparación médica conservó incertidumbre diagnóstica, activación de EMS, límites de capacitación y ausencia de dosis o procedimientos avanzados.
+- **Límite de seguridad:** la adaptación no añadió técnicas de persecución, arresto, registro, sujeción, entrada, respuesta a armas ni trauma avanzado.
+- **Fuentes suplementarias en español:** no se añadieron; se conservaron las autoridades canónicas específicas de Virginia y las fuentes médicas nacionales de la edición inglesa.
+- **Pregunta resuelta sobre siglas:** CPR y AED son las formas principales por el ambiente profesional en inglés de Virginia; RCP y DEA se reconocen como variantes que pueden aparecer en materiales públicos en español. EMS se conserva después de la primera explicación bilingüe.
+
 ## 2026-08-20 — English Chapters 12–15 research
 
 - **Scope:** Virginia emergency-vehicle exemptions and warning equipment; response and pursuit judgment; arrest, summons, search-warrant, property, magistrate, and custody processes; family-abuse definitions, predominant-aggressor analysis, protective orders, and child reporting; CPR/AED, bleeding, naloxone, bloodborne exposure, and custody medical care.

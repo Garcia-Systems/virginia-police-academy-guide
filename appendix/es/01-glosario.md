@@ -105,3 +105,43 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 **Uso de la fuerza — use of force.** Fuerza sujeta a Constitución, ley, política, capacitación, documentación y revisión. Véase Capítulo 2.
 
 **Víctima — victim.** Persona que presuntamente sufrió daño; el lenguaje centrado en la persona no determina por sí solo una conclusión jurídica ni de credibilidad. Véase Capítulo 7.
+
+**Autoridad para arrestar — arrest authority.** Base jurídica para tomar a una persona bajo custodia mediante una orden válida o una autoridad específica sin orden; no es una facultad general. Véase Capítulo 13.
+
+**Procesamiento de ingreso — booking.** Admisión y registro administrativos en un centro receptor; el contenido y vocabulario varían y no equivalen a una decisión de culpabilidad. Véase Capítulo 13.
+
+**Debida consideración por la seguridad — due regard.** Deber jurídico continuo de considerar la seguridad ante riesgos previsibles al ejercer las facultades condicionales de conducción de emergencia; no confiere inmunidad. Véase Capítulo 12.
+
+**Orden de protección de emergencia — Emergency Protective Order (EPO).** Orden judicial de corta duración expedida bajo requisitos estatutarios concretos; se distingue de una PPO y de una orden posterior a audiencia. Véase Capítulo 14.
+
+**Vehículo de emergencia autorizado — authorized emergency vehicle.** Vehículo incluido en la definición estatutaria de Virginia; la categoría y las exenciones aplicables dependen de ley, circunstancia, equipo y política. Véase Capítulo 12.
+
+**Encuentro de alto riesgo — high-risk encounter.** Descripción amplia de peligro o incertidumbre elevados que exige información, autoridad, recursos y reevaluación; no es una clasificación universal ni una táctica. Véase Capítulo 14.
+
+**Magistrado de Virginia — Virginia magistrate.** Funcionario judicial independiente con atribuciones definidas por ley, entre ellas determinadas revisiones de causa probable, órdenes y procesos de fianza; no pertenece a la cadena policial. Véase Capítulo 13.
+
+**Naloxona — naloxone.** Medicamento que puede revertir temporalmente efectos de opioides; no reemplaza la activación, vigilancia ni atención de EMS. Véase Capítulo 15.
+
+**Exposición ocupacional — occupational exposure.** Contacto laboral que puede transmitir enfermedad por sangre o fluidos y que exige informe, evaluación y seguimiento prontos conforme al plan aplicable. Véase Capítulo 15.
+
+**Persona bajo custodia — person in custody.** Persona cuya libertad está lícitamente restringida y respecto de la cual continúan deberes de dignidad, seguridad, atención, bienes, vigilancia y transferencia. Véase Capítulo 13.
+
+**Agresor físico predominante — predominant physical aggressor.** Valoración estatutaria de Virginia cuando existe causa probable recíproca; considera factores legales y no se reduce al tamaño, emoción ni identidad de quien llamó. Véase Capítulo 14.
+
+**Orden de protección preliminar — Preliminary Protective Order (PPO).** Orden expedida en espera de audiencia al cumplirse requisitos legales; se distingue de una EPO y de una orden posterior a audiencia. Véase Capítulo 14.
+
+**Orden de registro — search warrant.** Autoridad judicial delimitada por causa probable, particularidad y sus términos; no es una licencia general para registrar. Véase Capítulo 13.
+
+**Registro incidental a un arresto legal — search incident to lawful arrest.** Excepción vinculada a un arresto lícito y limitada por su alcance jurídico; no autoriza todo registro posterior. Véase Capítulo 13.
+
+**Persecución vehicular — vehicle pursuit.** Intento definido por política de detener a quien huye o se niega a parar; inicio, continuación, supervisión y terminación exigen reevaluación de necesidad y riesgo. Véase Capítulo 12.
+
+**Servicios médicos de emergencia — Emergency Medical Services (EMS).** Sistema coordinado de atención prehospitalaria; se conserva la sigla inglesa habitual en Virginia. Véase Capítulo 15.
+
+**Reanimación cardiopulmonar — cardiopulmonary resuscitation (CPR).** Destreza certificada destinada a sostener circulación durante paro cardíaco; este libro conserva la sigla profesional inglesa y no sustituye práctica. Véase Capítulo 15.
+
+**Desfibrilador externo automático — automated external defibrillator (AED).** Dispositivo que analiza ritmo y da indicaciones para una descarga cuando corresponde; su uso exige la instrucción aplicable. Véase Capítulo 15.
+
+**Precauciones universales / estándar — universal / standard precautions.** Marcos de prevención que aplican controles apropiados ante material potencialmente infeccioso; *universales* es el término histórico y debe seguirse la terminología vigente. Véase Capítulo 15.
+
+**Torniquete — tourniquet.** Dispositivo de control de determinadas hemorragias graves cuyo empleo debe aprenderse en instrucción formal aprobada. Véase Capítulo 15.
