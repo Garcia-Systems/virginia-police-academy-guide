@@ -133,6 +133,8 @@ The emotional difficulty may be less dramatic but equally real: being corrected 
 
 A Virginia academy operates inside a larger certification and employment system. DCJS establishes statewide requirements; certified academies deliver approved training; agencies hire, supervise, and add local policy. HRCJTA’s published regional role and JCCPD membership do not reveal an unpublished schedule. The January 1, 2027 transition makes source dates important. Academy graduation leads into field training, probation, continuing education, and a career of accountable learning.
 
+For reusable planning tools, see the **Virginia Law-Enforcement Certification Roadmap** and **Physical Preparation Guide** in the appendices.
+
 ## Further Reading & References
 
 ### Official Sources

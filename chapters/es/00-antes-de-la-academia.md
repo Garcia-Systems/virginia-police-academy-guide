@@ -89,6 +89,8 @@ También pesa recibir corrección delante de otras personas, descubrir límites 
 
 DCJS administra requisitos estatales; las academias certificadas imparten capacitación aprobada; las agencias contratan, supervisan y añaden políticas. La función regional publicada de HRCJTA y la afiliación de JCCPD no revelan su calendario. La transición del 1 de enero de 2027 hace imprescindible fechar las fuentes. Tras la graduación siguen entrenamiento de campo, período probatorio y aprendizaje responsable continuo.
 
+Para herramientas reutilizables, consulte la **Ruta de Certificación Policial en Virginia** y la **Guía de Preparación Física** en los apéndices.
+
 ## Lecturas adicionales y referencias
 
 ### Fuentes oficiales

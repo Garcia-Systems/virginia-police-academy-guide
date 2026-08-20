@@ -1,5 +1,14 @@
 # Shared Research Log
 
+## 2026-08-20 — Bilingual appendices and source-freshness audit
+
+- **Scope:** six English and six Spanish reference appendices, bilingual terminology, appendix ordering, certification pathway, physical preparation, family support, bibliography curation, and research methodology.
+- **Current/future rule:** retained the separately labeled framework effective on the research date and DCJS materials identified for January 1, 2027 implementation; no cohort transition rule, score, attempt count, or physical cutoff was inferred.
+- **Local limitation:** public HRCJTA/JCCPD records did not establish a daily academy schedule, physical score table, FTO model, field-training duration, probation length, or shift structure. Both editions say so expressly.
+- **Freshness/connectivity result:** attempted to reopen DCJS training, 6VAC20-20, 6VAC20-30, HRCJTA, and JCC Police Jobs with ordinary HTTPS requests. The environment's CONNECT tunnel returned HTTP 403 before page retrieval. The audit therefore preserved previously reviewed authoritative records, classified historically retained sources, and placed these high-impact locators on the prepublication live-link recheck list.
+- **Physical-preparation decision:** no unverified numerical score was imported from another academy. The appendix supplies only moderate general conditioning and directs the reader to current written local requirements.
+- **Chapter correction/cross-reference:** no high-impact factual contradiction was found. Chapter 0 in each language now points sparingly to the roadmap and physical guide.
+
 ## 2026-08-20 — Adaptación española de los Capítulos 16–19
 
 - **Base canónica:** se adaptaron íntegramente los Capítulos 16–19 ingleses revisados el 20 de agosto de 2026. La edición española conserva la secuencia editorial, las limitaciones sobre HRCJTA y la separación entre finalización de la academia, certificación, empleo y entrenamiento de campo.
