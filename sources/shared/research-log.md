@@ -1,5 +1,17 @@
 # Shared Research Log
 
+## 2026-08-20 — English Chapters 16–19: integration, evaluation, and academy completion
+
+- **Scope:** scenario-based integration; incomplete information and articulation; human performance under pressure; remediation; compulsory minimum training; the Virginia certification examination; academy completion/certification distinctions; graduation; and transition to field training.
+- **Current/future distinction:** The manuscript preserves the currently effective 2026 framework and separately labels DCJS materials identified for implementation on **January 1, 2027**. It directs any cohort crossing that date to DCJS and the academy rather than inferring a transition rule.
+- **Certification-examination limitation:** Public records available to the project support treating the certification examination as part of the Virginia framework, but did not supply a sufficiently stable basis for publishing a question count, passing percentage, universal attempt limit, or universal remediation rule. Chapters 17–19 direct recruits to current written DCJS/academy instructions.
+- **HRCJTA limitation:** No public source reviewed established a Week 16 scenario schedule, scenario scoring instrument, remediation/retest rule, final-week calendar, graduation ritual, guest process, attire, awards, or badge-pinning practice. None is asserted.
+- **Field-training limitation:** The manuscript previews commonly evaluated professional areas but does not state a James City County phase structure, duration, rating form, release rule, or local FTO title as fact.
+- **Human-performance characterization:** Cognitive-load, fatigue, sleep, retrieval-practice, and debriefing sources support qualified general statements only. The chapters avoid universal stress-response claims, diagnosis, and police folklore presented as science.
+- **Research environment:** The official-web search service returned 401 and direct external HTTPS returned `CONNECT tunnel failed, response 403` on August 20, 2026. A publication reviewer must reopen DCJS-CERT-001 and VA-CERT-001, verify current/effective status and exact future-document title, test every link, and record transition guidance if posted.
+- **Continuity review:** Chapters 0–19 consistently distinguish editorial weeks from HRCJTA's unpublished sequence, separate graduation from certification and employment, and lead from academy evaluation into—not through—Chapter 20 field training. No wholesale earlier-chapter rewrite was needed.
+- **Spanish planning only:** Terminology for integrated scenarios, remediation, reassessment, competency, qualification, certification, certification examination, passing standard, graduation, academy graduate, probationary officer, field training, and FTO was added to the translation guide. Spanish Chapters 16–19 remain placeholders as required.
+
 ## 2026-08-20 — Adaptación española de los Capítulos 12–15
 
 - **Base canónica:** se adaptaron íntegramente los Capítulos 12–15 ingleses revisados el 20 de agosto de 2026, sin añadir afirmaciones jurídicas, médicas ni operativas independientes y sin modificar el texto inglés.
