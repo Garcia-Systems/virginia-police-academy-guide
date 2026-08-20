@@ -41,6 +41,20 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | vulnerable person / adult | persona vulnerable / adulto vulnerable | Lenguaje centrado en la persona; usar definición controlante cuando sea categoría legal |
 | warning | advertencia | No confundir con citación ni prometer resultado judicial |
 | witness | testigo | Precisar si es presencial y atribuir su base de conocimiento |
+| custody | custodia | Distinguir custodia policial, custodia de emergencia y custodia familiar; conservar el término jurídico inglés al introducirlo |
+| restraint | restricción / medio de sujeción | Elegir según acto, condición o equipo; nunca presentar como castigo |
+| resistance | resistencia | Las categorías exactas dependen de ley, norma, entrenamiento y política; describir conducta observable |
+| compliance | cumplimiento | Distinguir cumplimiento voluntario de coerción; evitar implicar obediencia personal al agente |
+| defensive tactics | tácticas defensivas | Campo de destrezas supervisadas; no traducir como manual de combate |
+| use of force | uso de la fuerza | Término jurídico-profesional; distinguir fuerza física, fuerza letal y política aplicable |
+| deadly force | fuerza letal | Verificar definición legal controlante; no usar como simple sinónimo de arma de fuego |
+| duty to intervene | deber de intervenir | Distinguir obligación estatutaria, estándar estatal y política de agencia |
+| firearm | arma de fuego | Vocabulario de seguridad y responsabilidad, sin glorificación |
+| qualification | cualificación con armas de fuego | No equivale a autorización legal para disparar; evitar *calificación* cuando se refiere al proceso completo |
+| muzzle | boca del cañón | Término de seguridad; confirmar preferencia del instructor/agencia |
+| trigger | gatillo / disparador | *Gatillo* es más accesible; conservar inglés en la primera enseñanza profesional si resulta útil |
+| threat | amenaza | Separar peligro observado, información recibida, inferencia e incertidumbre |
+| critical incident | incidente crítico | No implica automáticamente diagnóstico ni procedimiento específico de JCCPD |
 | objective reasonableness | razonabilidad objetiva | Conservar inglés al introducirlo |
 | police report | informe policial | Formato depende de la agencia |
 | probable cause | causa probable | Conservar inglés al introducirlo |

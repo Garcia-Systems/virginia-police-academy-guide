@@ -1,5 +1,14 @@
 # Shared Research Log
 
+## 2026-08-20 — English Chapters 8–11 research
+
+- **Scope:** custody and restraint responsibility; search incident to arrest; medical monitoring; constitutional and Virginia force law; de-escalation and intervention; firearm safety and occupational health; judgment under uncertainty; stress, memory, critical-incident review, and wellness.
+- **Primary authorities:** DCJS training locator; *Code of Virginia* Title 19.2, Chapter 7; official U.S. Reports for *Graham v. Connor*, *Tennessee v. Garner*, and *United States v. Robinson*; the Supreme Court opinion in *Riley v. California*; and federal DOJ/ATF/NIOSH/COPS resources.
+- **Currency limitation:** The research service returned HTTP 401 and the environment's direct HTTPS tunnel returned 403 on August 20, 2026. The statutory discussion is deliberately conservative, points readers to the operative provisions, and must be reopened against the official current text by a Virginia-qualified reviewer before publication. No unverified effective-date change is asserted.
+- **Agency boundary:** No public source located in this environment verified an HRCJTA week sequence, qualification course/score, restraint method, range procedure, or JCCPD force, storage, discharge, transport, property, medical, or post-incident procedure. The chapters expressly defer those matters to current instruction and policy.
+- **Safety review:** Excluded physical-control mechanics, strikes, joint manipulation, restraint positioning, weapon retention/disarming, approach and entry tactics, shooting drills, target areas, rapid fire, firearm modification, and adversarial scenario details. Firearms content is limited to common safety principles, supervision, judgment, secure access, health, and accountability.
+- **Translation preparation:** Added controlled terms for custody, restraints, resistance, force law, firearm safety, threat assessment, and critical incidents to the translation guide. Spanish Chapters 8–11 remain unchanged placeholders for the recommended next PR.
+
 ## 2026-08-20 — Spanish Chapters 4–7 adaptation
 
 - **Canonical basis:** Adapted the complete, stable English Chapters 4–7 without adding independent legal claims or Spanish-only sources.
