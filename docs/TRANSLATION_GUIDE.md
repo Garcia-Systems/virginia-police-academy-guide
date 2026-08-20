@@ -18,7 +18,9 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | call for service | llamada de servicio | La clasificación inicial no prueba el hecho |
 | chain of custody | cadena de custodia | Historial documentado de posesión y manejo |
 | citation | citación / boleta | Distinguir del término procesal *summons* |
+| collision / accident | colisión / accidente | Usar según texto oficial o conversación; no emplear *accidente* para presuponer ausencia de responsabilidad |
 | crash report | informe de choque | Preferir *choque* si la causalidad no está establecida |
+| crash | choque | Preferido en narración profesional cuando la causalidad no está establecida; explicar *accidente* y *colisión* según contexto |
 | crisis intervention | intervención en crisis | No equivale automáticamente a custodia de emergencia |
 | consensual encounter | encuentro consensual | No confundir con detención |
 | de-escalation | desescalamiento | Preferido para el proceso profesional |
@@ -27,9 +29,18 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | investigative detention | detención investigativa | Distinguir de arresto |
 | emergency custody order (ECO) | orden de custodia de emergencia (ECO) | Conservar sigla y término jurídico de Virginia en inglés |
 | evidence | evidencia / prueba | Elegir según contexto investigativo o judicial |
+| family or household member | familiar o miembro del hogar | Conservar inglés al introducir; la definición estatutaria de Virginia controla |
+| follow-up investigation | investigación de seguimiento | Distinguir de preliminar y especializada |
+| interpreter | intérprete | Ser bilingüe no equivale automáticamente a cualificación para interpretar |
 | patrol | patrullaje | *Patrulla* puede referirse a unidad o vehículo |
 | preliminary investigation | investigación preliminar | Distinguir de investigación de seguimiento |
 | protective order | orden de protección | Verificar clase y vigencia exactas |
+| statement | declaración | Atribuir a la persona; distinguir de observación e inferencia |
+| temporary detention order (TDO) | orden de detención temporal (TDO) | Conservar sigla y término jurídico de Virginia en inglés |
+| victim-centered | centrado en la víctima | Lenguaje de atención; no decide credibilidad ni elimina deberes legales |
+| vulnerable person / adult | persona vulnerable / adulto vulnerable | Lenguaje centrado en la persona; usar definición controlante cuando sea categoría legal |
+| warning | advertencia | No confundir con citación ni prometer resultado judicial |
+| witness | testigo | Precisar si es presencial y atribuir su base de conocimiento |
 | objective reasonableness | razonabilidad objetiva | Conservar inglés al introducirlo |
 | police report | informe policial | Formato depende de la agencia |
 | probable cause | causa probable | Conservar inglés al introducirlo |
