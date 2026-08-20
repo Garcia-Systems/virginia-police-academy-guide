@@ -15,17 +15,29 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | accountability | rendición de cuentas | Evitar falsos cognados |
 | arrest | arresto | Presentar el par la primera vez |
 | chain of command | cadena de mando | Contexto de agencia |
+| call for service | llamada de servicio | La clasificación inicial no prueba el hecho |
+| chain of custody | cadena de custodia | Historial documentado de posesión y manejo |
+| citation | citación / boleta | Distinguir del término procesal *summons* |
+| crash report | informe de choque | Preferir *choque* si la causalidad no está establecida |
+| crisis intervention | intervención en crisis | No equivale automáticamente a custodia de emergencia |
 | consensual encounter | encuentro consensual | No confundir con detención |
 | de-escalation | desescalamiento | Preferido para el proceso profesional |
 | dispatch | despacho / *dispatch* | Conservar *dispatch* como vocabulario operativo |
 | field training | entrenamiento de campo | Introducir Field Training Officer (FTO) |
 | investigative detention | detención investigativa | Distinguir de arresto |
+| emergency custody order (ECO) | orden de custodia de emergencia (ECO) | Conservar sigla y término jurídico de Virginia en inglés |
+| evidence | evidencia / prueba | Elegir según contexto investigativo o judicial |
+| patrol | patrullaje | *Patrulla* puede referirse a unidad o vehículo |
+| preliminary investigation | investigación preliminar | Distinguir de investigación de seguimiento |
+| protective order | orden de protección | Verificar clase y vigencia exactas |
 | objective reasonableness | razonabilidad objetiva | Conservar inglés al introducirlo |
 | police report | informe policial | Formato depende de la agencia |
 | probable cause | causa probable | Conservar inglés al introducirlo |
 | reasonable suspicion | sospecha razonable | Conservar inglés al introducirlo |
 | search and seizure | registro e incautación | Concepto constitucional estadounidense |
 | summons | *summons* / citación judicial | Evitar confusión con *citation* |
+| reckless driving | conducción temeraria | Delito estatutario; no simple descuido |
+| victim / witness | víctima / testigo | Mantener atribución precisa y lenguaje centrado en la persona |
 | traffic stop | parada de tráfico | Conservar inglés en enseñanza de radio |
 | warrant | orden judicial / *warrant* | Enseñar vocabulario profesional |
 
