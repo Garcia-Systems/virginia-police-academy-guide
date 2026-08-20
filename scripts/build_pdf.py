@@ -9,7 +9,9 @@ ROOT=Path(__file__).resolve().parents[1]
 W,H=612,792; LEFT,RIGHT,TOP,BOTTOM=58,58,60,52
 URL_RE=re.compile(r'\[([^]]+)\]\(([^)]+)\)|(https?://[^\s<>]+)')
 IMAGE_RE=re.compile(r'^!\[([^]]*)\]\(([^)]+\.png)\)$', re.IGNORECASE)
+FENCE_RE=re.compile(r'^ {0,3}(`{3,}|~{3,})([^`]*)$')
 LINK_BLUE=(0,0,238/255)
+DIAGRAM_ARROWS='↓→←↑'
 
 def load_manifest():
  spec=importlib.util.spec_from_file_location('manifest',ROOT/'book_manifest.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); return mod.BOOKS
@@ -192,6 +194,57 @@ class Renderer:
   indent=16 if quote or bullet else 0; prefix='• ' if bullet else ('“' if quote else '')
   self.styled_block(text,indent=indent,prefix=prefix,internal=internal)
   self.y-=5
+ def arrow(self,char,x,y,size):
+  """Draw a diagram arrow in the cell occupied by an unsupported glyph."""
+  cell=size*.6; cx=x+cell/2; cy=y+size*.32; inset=size*.14; head=size*.20
+  if char in '↓↑':
+   start,end=(y+size*.82,y-inset) if char=='↓' else (y-inset,y+size*.82)
+   tip=end
+   head_y=tip+(head if char=='↓' else -head)
+   points=f'{cx-head:.2f} {head_y:.2f} m {cx:.2f} {tip:.2f} l {cx+head:.2f} {head_y:.2f} l'
+   shaft=f'{cx:.2f} {start:.2f} m {cx:.2f} {end:.2f} l'
+  else:
+   start,end=(x+inset,x+cell-inset) if char=='→' else (x+cell-inset,x+inset)
+   tip=end
+   head_x=tip+(-head if char=='→' else head)
+   points=f'{head_x:.2f} {cy-head:.2f} m {tip:.2f} {cy:.2f} l {head_x:.2f} {cy+head:.2f} l'
+   shaft=f'{start:.2f} {cy:.2f} m {end:.2f} {cy:.2f} l'
+  self.page.ops.append(f'q 0 G 0.8 w {shaft} S {points} S Q')
+ def pre_line(self,text,size,gap):
+  """Render one source line in fixed-width cells, including vector arrows."""
+  if self.y-gap<BOTTOM: self.new(self.page.head)
+  cell=size*.6; start=0
+  for match in re.finditer(f'[{DIAGRAM_ARROWS}]',text):
+   if match.start()>start:
+    run=text[start:match.start()]
+    self.page.ops.append(f'BT /F3 {size:.1f} Tf {LEFT+start*cell:.2f} {self.y:.2f} Td ({esc(run)}) Tj ET')
+   self.arrow(match.group(),LEFT+match.start()*cell,self.y,size)
+   start=match.end()
+  if start<len(text):
+   self.page.ops.append(f'BT /F3 {size:.1f} Tf {LEFT+start*cell:.2f} {self.y:.2f} Td ({esc(text[start:])}) Tj ET')
+  self.y-=gap
+ def preformatted(self,source_lines):
+  """Lay out a fenced Markdown block without normalizing its whitespace."""
+  max_width=W-LEFT-RIGHT; longest=max((len(line) for line in source_lines),default=0)
+  size=9.5
+  if longest*size*.6>max_width: size=max(8.0,max_width/(longest*.6))
+  columns=max(1,int(max_width/(size*.6)))
+  visual=[]
+  for line in source_lines:
+   if len(line)<=columns: visual.append(line); continue
+   # Continuations remain preformatted and are visibly marked, never changed
+   # into prose or allowed to cross the printable right margin.
+   visual.append(line[:columns]); remainder=line[columns:]
+   prefix='  > '
+   while remainder:
+    visual.append(prefix+remainder[:columns-len(prefix)])
+    remainder=remainder[columns-len(prefix):]
+  gap=size+3; required=8+len(visual)*gap+8
+  page_capacity=H-TOP-BOTTOM
+  if required<=page_capacity and self.y-BOTTOM<required: self.new(self.page.head)
+  self.y-=8
+  for line in visual: self.pre_line(line,size,gap)
+  self.y-=8
  def image(self,path):
   image=read_png(path)
   draw_w=W-LEFT-RIGHT; draw_h=draw_w*image.height/image.width
@@ -213,11 +266,21 @@ class Renderer:
   # The first H1 was formerly consumed as metadata. Render the canonical title.
   self.styled_block(raw_title,20,True,gap=25)
   self.y-=8
-  para=[]
+  para=[]; fence=None; pre=[]
   def flush():
    nonlocal para
    if para: self.paragraph(' '.join(x.strip() for x in para)); para=[]
   for raw in lines[1:]:
+   if fence:
+    closing=re.match(r'^ {0,3}('+re.escape(fence[0])+r'{'+str(fence[1])+r',})\s*$',raw)
+    if closing:
+     self.preformatted(pre); fence=None; pre=[]
+    else: pre.append(raw)
+    continue
+   fence_match=FENCE_RE.match(raw)
+   if fence_match:
+    flush(); marker=fence_match.group(1); fence=(marker[0],len(marker)); pre=[]
+    continue
    s=raw.strip()
    if not s: flush(); continue
    image_match=IMAGE_RE.match(s)
@@ -242,6 +305,7 @@ class Renderer:
     self.paragraph(m.group(2),internal=f'appendix-{slugs[int(m.group(1))-1]}')
    elif s.startswith('|'): flush(); self.paragraph(s.replace('|','  '))
    else: para.append(s)
+  if fence: raise SystemExit(f'Unclosed Markdown fence in {path.relative_to(ROOT)}')
   flush()
  def render(self,files,out):
   self.new(self.title); self.y=H-170
@@ -255,7 +319,7 @@ class PDF:
  def __init__(self,pages,title,lang): self.pages=pages; self.title=title; self.lang=lang; self.objs=[]
  def add(self,b): self.objs.append(b if isinstance(b,bytes) else b.encode('latin1','replace')); return len(self.objs)
  def write(self,path):
-  catalog=self.add(b''); pages_id=self.add(b''); f1=self.add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>'); f2=self.add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>')
+  catalog=self.add(b''); pages_id=self.add(b''); f1=self.add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>'); f2=self.add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>'); f3=self.add('<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>')
   image_ids={}
   for image_path in dict.fromkeys(image_path for page in self.pages for image_path in page.images):
    image=read_png(image_path)
@@ -277,7 +341,7 @@ class PDF:
    aid=(' /Annots ['+' '.join(f'{x} 0 R' for x in anns)+']') if anns else ''
    xobjects=' '.join(f'/{name} {image_ids[image_path]} 0 R' for image_path,name in p.images.items())
    image_resources=f' /XObject << {xobjects} >>' if xobjects else ''
-   page_ids.append(self.add(f'<< /Type /Page /Parent {pages_id} 0 R /MediaBox [0 0 {W} {H}] /Resources << /Font << /F1 {f1} 0 R /F2 {f2} 0 R >>{image_resources} >> /Contents {content} 0 R{aid} >>'))
+   page_ids.append(self.add(f'<< /Type /Page /Parent {pages_id} 0 R /MediaBox [0 0 {W} {H}] /Resources << /Font << /F1 {f1} 0 R /F2 {f2} 0 R /F3 {f3} 0 R >>{image_resources} >> /Contents {content} 0 R{aid} >>'))
   self.objs[pages_id-1]=f"<< /Type /Pages /Count {len(page_ids)} /Kids [{' '.join(f'{x} 0 R' for x in page_ids)}] >>".encode()
   destinations=[]; outline_entries=[]
   for page,page_id in zip(self.pages,page_ids):
