@@ -30,3 +30,12 @@
 
 - Chapter 20: After the Academy: Field Training
 - Chapter 21: The First Year: From Recruit to Working Officer
+
+## Appendices and Research Aids
+
+1. Glossary of Police and Academy Terminology
+2. Virginia Law-Enforcement Certification Roadmap
+3. Physical Preparation Guide
+4. Guide for the Recruit's Family
+5. Master Further-Reading Bibliography
+6. Source and Research Notes

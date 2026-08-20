@@ -30,3 +30,12 @@
 
 - Capítulo 20: Después de la Academia: Entrenamiento de Campo
 - Capítulo 21: El Primer Año: De Recluta a Agente en Funciones
+
+## Apéndices y Recursos de Investigación
+
+1. Glosario Bilingüe de Terminología Policial y de Academia
+2. Ruta de Certificación Policial en Virginia
+3. Guía de Preparación Física
+4. Guía para la Familia de la Persona Recluta
+5. Bibliografía Maestra de Lecturas Adicionales
+6. Notas de Fuentes e Investigación

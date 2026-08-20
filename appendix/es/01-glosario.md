@@ -2,6 +2,10 @@
 
 La expresión española facilita el aprendizaje; la inglesa importa porque la academia y el trabajo en Virginia se realizan profesionalmente en inglés.
 
+Las traducciones jurídicas dependen del contexto. El español explica el concepto; el término inglés y la autoridad vigente controlan el trabajo profesional.
+
+**Academia policial — police academy.** Academia certificada que imparte preparación básica aprobada; no debe confundirse su currículo con la secuencia editorial de semanas de este libro. Véase Capítulo 0.
+
 **Academia certificada de justicia penal — certified criminal justice training academy.** Institución que cumple las normas de Virginia para impartir capacitación aprobada. Véase Capítulo 0.
 
 **Agente juramentada — sworn officer.** Agente que prestó el juramento requerido y ejerce autoridad sujeta a cualificación y certificación. Véase Capítulo 1.
@@ -9,6 +13,8 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 **Articulación — articulation.** Explicación clara de hechos, inferencias, autoridad y decisiones; no permite añadir detalles después. Véanse Capítulos 2–3.
 
 **Arresto — arrest.** Incautación sustancial de una persona que normalmente exige causa probable. Véase Capítulo 2.
+
+**Recluta — recruit.** Persona en preparación básica de academia; su empleo, juramento, certificación y período probatorio deben describirse por separado. Véanse Capítulos 0–1.
 
 **Arma de fuego — firearm.** Herramienta profesional peligrosa sujeta a manejo y almacenamiento seguros, autoridad legal, política y rendición de cuentas. Véanse Capítulos 10–11.
 
@@ -19,6 +25,8 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 **Causa probable — probable cause.** Probabilidad práctica basada en la totalidad de circunstancias, suficiente para la decisión correspondiente de arrestar o registrar; no es prueba más allá de duda razonable. Véase Capítulo 2.
 
 **Certificación — certification.** Condición estatal tras cumplir requisitos laborales, formativos y administrativos; no es solo un diploma. Véase Capítulo 0.
+
+**Normas mínimas obligatorias de capacitación — compulsory minimum training standards.** Mínimos establecidos en el marco jurídico de Virginia y administrados por DCJS; importan la versión controlante y su fecha efectiva. Véanse Capítulos 0 y 18.
 
 **Examen de certificación — certification examination.** Examen exigido dentro del marco de certificación de DCJS; no es sinónimo de toda prueba de la academia. Véase Capítulo 18.
 
@@ -102,6 +110,8 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 
 **Orden judicial — warrant.** Autorización judicial que normalmente exige causa probable, juramento o afirmación y particularidad. Véase Capítulo 2.
 
+**Circunstancias exigentes — exigent circumstances.** Excepción dependiente de hechos que puede permitir actuación limitada sin obtener primero una orden cuando el derecho reconoce una urgencia. La ley vigente controla existencia y alcance. Véanse Capítulos 2 y 13.
+
 **Parada de tráfico — traffic stop.** Incautación temporal que requiere justificación constitucional y cuyo alcance y duración dependen de los hechos y la ley vigente. Véase Capítulo 5.
 
 **Patrullaje — patrol.** Servicio policial general en un área o función asignada; *patrulla* puede nombrar una unidad o vehículo. Véase Capítulo 4.
@@ -121,6 +131,10 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 **Amenaza — threat.** Peligro valorado mediante hechos articulables y contexto; una posibilidad o un objeto desconocido no constituyen confirmación. Véase Capítulo 11.
 
 **Registro e incautación — search and seizure.** Conceptos de la Cuarta Enmienda relativos a ciertas intrusiones en privacidad o áreas protegidas e interferencias con personas o propiedad. Véase Capítulo 2.
+
+**Registro — search.** Intrusión gubernamental que afecta un interés o área constitucionalmente protegidos. La existencia del registro y la autoridad necesaria dependen de hechos y ley vigente. Véanse Capítulos 2 y 13.
+
+**Incautación — seizure.** Interferencia gubernamental con una persona o propiedad que satisface el estándar constitucional; su existencia y razonabilidad dependen del contexto. Véase Capítulo 2.
 
 **Rendición de cuentas — accountability.** Obligación de explicar la conducta y aceptar revisión y consecuencias. Véase Capítulo 1.
 
