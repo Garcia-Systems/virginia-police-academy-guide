@@ -12,6 +12,7 @@ IMAGE_RE=re.compile(r'^!\[([^]]*)\]\(([^)]+\.png)\)$', re.IGNORECASE)
 FENCE_RE=re.compile(r'^ {0,3}(`{3,}|~{3,})([^`]*)$')
 LINK_BLUE=(0,0,238/255)
 DIAGRAM_ARROWS='↓→←↑'
+TABLE_SEPARATOR_CELL_RE=re.compile(r'^:?-{3,}:?$')
 
 def load_manifest():
  spec=importlib.util.spec_from_file_location('manifest',ROOT/'book_manifest.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); return mod.BOOKS
@@ -86,7 +87,7 @@ def wrap(s,size,maxw,bold=False):
  if cur: out.append(cur)
  return out or ['']
 
-def wrap_spans(spans,size,maxw):
+def wrap_spans(spans,size,maxw,bold=False):
  """Return visual lines and linked character ranges for styled Markdown spans."""
  chars=[]
  for text,link in spans:
@@ -107,12 +108,12 @@ def wrap_spans(spans,size,maxw):
  if token: tokens.append(token)
  for token in tokens:
   candidate=line+([(' ',None)] if line else [])+token
-  if line and width(''.join(c for c,_ in candidate),size)>maxw:
+  if line and width(''.join(c for c,_ in candidate),size,bold)>maxw:
    lines.append(line); line=[]
-  if not line and width(''.join(c for c,_ in token),size)>maxw:
+  if not line and width(''.join(c for c,_ in token),size,bold)>maxw:
    part=[]
    for item in token:
-    if part and width(''.join(c for c,_ in part+[item]),size)>maxw:
+    if part and width(''.join(c for c,_ in part+[item]),size,bold)>maxw:
      lines.append(part); part=[]
     part.append(item)
    line=part
@@ -128,6 +129,37 @@ def wrap_spans(spans,size,maxw):
    start=end
   result.append((text,runs))
  return result
+
+def split_table_row(row):
+ """Split a Markdown table row without treating escaped/code-span pipes as separators."""
+ source=row.strip()
+ if source.startswith('|'): source=source[1:]
+ if source.endswith('|') and not source.endswith(r'\|'): source=source[:-1]
+ cells=[]; cell=[]; escaped=False; in_code=False
+ for char in source:
+  if escaped:
+   cell.append(char); escaped=False; continue
+  if char=='\\':
+   escaped=True; continue
+  if char=='`': in_code=not in_code; cell.append(char); continue
+  if char=='|' and not in_code:
+   cells.append(''.join(cell).strip()); cell=[]
+  else: cell.append(char)
+ if escaped: cell.append('\\')
+ cells.append(''.join(cell).strip())
+ return cells
+
+def table_alignments(row):
+ """Return Markdown column alignments, or None when row is not a separator."""
+ cells=split_table_row(row)
+ if not cells or any(not TABLE_SEPARATOR_CELL_RE.fullmatch(cell.replace(' ','')) for cell in cells): return None
+ return [('center' if cell.strip().startswith(':') and cell.strip().endswith(':')
+          else 'right' if cell.strip().endswith(':') else 'left') for cell in cells]
+
+def is_table_start(lines,index):
+ return (index+1<len(lines) and '|' in lines[index]
+         and (alignments:=table_alignments(lines[index+1])) is not None
+         and len(split_table_row(lines[index]))==len(alignments))
 @dataclass
 class Page:
  head:str; ops:list[str]=field(default_factory=list); links:list[tuple]=field(default_factory=list); images:dict[Path,str]=field(default_factory=dict); destinations:list[tuple[str,float]]=field(default_factory=list)
@@ -168,25 +200,25 @@ class Renderer:
    spans.append((clean(label),link)); spans.append((suffix,None)); pos=m.end()
   spans.append((clean(text[pos:]),None))
   return spans
- def styled_line(self,text,runs,x,size,bold=False):
+ def styled_line(self,text,runs,x,size,bold=False,y=None):
   """Render one measured line, changing color without resetting text position."""
-  font='F2' if bold else 'F1'; parts=[]; pos=0
+  font='F2' if bold else 'F1'; parts=[]; pos=0; baseline=self.y if y is None else y
   for start,end,link in runs:
    if start>pos: parts.append(f'0 g ({esc(text[pos:start])}) Tj')
    parts.append(f'{LINK_BLUE[0]:.3f} {LINK_BLUE[1]:.3f} {LINK_BLUE[2]:.3f} rg ({esc(text[start:end])}) Tj')
    link_x=x+width(text[:start],size,bold)
-   self.page.links.append((link_x,self.y-2,link_x+width(text[start:end],size,bold),self.y+size,*link))
+   self.page.links.append((link_x,baseline-2,link_x+width(text[start:end],size,bold),baseline+size,*link))
    pos=end
   if pos<len(text) or not parts: parts.append(f'0 g ({esc(text[pos:])}) Tj')
   # Every segment remains in one PDF text object, so each Tj advances the same
   # continuous Helvetica text position used by the line-oriented renderer.
-  self.page.ops.append(f'BT /{font} {size:.1f} Tf {x:.1f} {self.y:.1f} Td '+ ' '.join(parts)+' ET')
+  self.page.ops.append(f'BT /{font} {size:.1f} Tf {x:.1f} {baseline:.1f} Td '+ ' '.join(parts)+' ET')
  def styled_block(self,text,size=10.5,bold=False,indent=0,gap=14,prefix='',internal=None):
   spans=self.markdown_spans(text)
   if prefix: spans.insert(0,(prefix,None))
   if internal: spans=[(''.join(s for s,_ in spans),('goto',internal))]
   x=LEFT+indent
-  for line,runs in wrap_spans(spans,size,W-RIGHT-x):
+  for line,runs in wrap_spans(spans,size,W-RIGHT-x,bold):
    if self.y-gap<BOTTOM: self.new(self.page.head)
    self.styled_line(line,runs,x,size,bold)
    self.y-=gap
@@ -245,6 +277,70 @@ class Renderer:
   self.y-=8
   for line in visual: self.pre_line(line,size,gap)
   self.y-=8
+ def table_widths(self,rows,font_size,padding):
+  """Allocate printable width by measured column demand, with useful bounds."""
+  columns=len(rows[0]); available=W-LEFT-RIGHT
+  natural=[]
+  for column in range(columns):
+   values=[plain(row[column]) for row in rows]
+   longest_word=max((width(word,font_size,row_no==0) for row_no,value in enumerate(values)
+                     for word in value.split()),default=0)
+   full=max((width(value,font_size,row_no==0) for row_no,value in enumerate(values)),default=0)
+   natural.append(max(42,longest_word+2*padding,min(full+2*padding,available*.45)))
+  minimum=max(38,min(62,available/(columns*2.3)))
+  widths=[max(minimum,value) for value in natural]
+  if sum(widths)<available:
+   extra=available-sum(widths); demand=[max(1,natural[i]-widths[i]) for i in range(columns)]
+   total=sum(demand); widths=[value+extra*demand[i]/total for i,value in enumerate(widths)]
+  else:
+   excess=sum(widths)-available
+   while excess>.01:
+    flexible=[max(0,value-minimum) for value in widths]; total=sum(flexible)
+    if not total: widths=[available/columns]*columns; break
+    reductions=[min(flexible[i],excess*flexible[i]/total) for i in range(columns)]
+    widths=[value-reductions[i] for i,value in enumerate(widths)]; excess=sum(widths)-available
+  # Correct accumulated floating point error at the right border.
+  widths[-1]+=available-sum(widths)
+  return widths
+ def table(self,header,body,alignments):
+  """Render a Markdown table with vector rules, wrapped cells, and repeated headers."""
+  columns=len(header); rows=[header]+[(row+['']*columns)[:columns] for row in body]
+  font_size=9.5; padding_x=5; padding_y=4; line_gap=font_size+2
+  widths=self.table_widths(rows,font_size,padding_x)
+  def layout(row,bold=False):
+   return [wrap_spans(self.markdown_spans(cell),font_size,widths[i]-2*padding_x,bold)
+           for i,cell in enumerate(row)]
+  layouts=[layout(row,row_no==0) for row_no,row in enumerate(rows)]
+  heights=[max(len(cell) for cell in row)*line_gap+2*padding_y for row in layouts]
+  total=sum(heights)
+  first_unit=heights[0]+(heights[1] if len(heights)>1 else 0)
+  if ((total<=H-TOP-BOTTOM and total>self.y-BOTTOM)
+      or first_unit>self.y-BOTTOM): self.new(self.page.head)
+  def draw(row,row_layout,height,bold=False,fill=False):
+   top=self.y; bottom=top-height; xs=[LEFT]
+   for column_width in widths: xs.append(xs[-1]+column_width)
+   if fill: self.page.ops.append(f'q 0.95 g {LEFT:.2f} {bottom:.2f} {sum(widths):.2f} {height:.2f} re f Q')
+   self.page.ops.append('q 0.55 G 0.45 w '+' '.join(
+    [f'{LEFT:.2f} {top:.2f} m {xs[-1]:.2f} {top:.2f} l S',
+     f'{LEFT:.2f} {bottom:.2f} m {xs[-1]:.2f} {bottom:.2f} l S']+
+    [f'{x:.2f} {bottom:.2f} m {x:.2f} {top:.2f} l S' for x in xs])+' Q')
+   for column,cell_lines in enumerate(row_layout):
+    for line_no,(text,runs) in enumerate(cell_lines):
+     text_width=width(text,font_size,bold)
+     if alignments[column]=='right': x=xs[column+1]-padding_x-text_width
+     elif alignments[column]=='center': x=xs[column]+(widths[column]-text_width)/2
+     else: x=xs[column]+padding_x
+     baseline=top-padding_y-font_size-line_no*line_gap+1
+     self.styled_line(text,runs,x,font_size,bold,y=baseline)
+   self.y=bottom
+  header_height=heights[0]
+  for row_no,(row,row_layout,height) in enumerate(zip(rows,layouts,heights)):
+   if row_no and self.y-height<BOTTOM:
+    self.new(self.page.head)
+    draw(header,layouts[0],header_height,True,True)
+   if row_no==0 and self.y-height<BOTTOM: self.new(self.page.head)
+   draw(row,row_layout,height,row_no==0,row_no==0)
+  self.y-=10
  def image(self,path):
   image=read_png(path)
   draw_w=W-LEFT-RIGHT; draw_h=draw_w*image.height/image.width
@@ -270,19 +366,27 @@ class Renderer:
   def flush():
    nonlocal para
    if para: self.paragraph(' '.join(x.strip() for x in para)); para=[]
-  for raw in lines[1:]:
+  index=1
+  while index<len(lines):
+   raw=lines[index]
    if fence:
     closing=re.match(r'^ {0,3}('+re.escape(fence[0])+r'{'+str(fence[1])+r',})\s*$',raw)
     if closing:
      self.preformatted(pre); fence=None; pre=[]
     else: pre.append(raw)
-    continue
+    index+=1; continue
    fence_match=FENCE_RE.match(raw)
    if fence_match:
     flush(); marker=fence_match.group(1); fence=(marker[0],len(marker)); pre=[]
-    continue
+    index+=1; continue
    s=raw.strip()
-   if not s: flush(); continue
+   if not s: flush(); index+=1; continue
+   if is_table_start(lines,index):
+    flush(); header=split_table_row(raw); alignments=table_alignments(lines[index+1]); body=[]; index+=2
+    while index<len(lines) and '|' in lines[index] and lines[index].strip():
+     body.append(split_table_row(lines[index])); index+=1
+    self.table(header,body,alignments)
+    continue
    image_match=IMAGE_RE.match(s)
    if image_match:
     flush(); image_path=(path.parent/image_match.group(2)).resolve()
@@ -291,6 +395,11 @@ class Renderer:
     self.image(image_path)
    elif s.startswith('#'):
     flush(); n=len(s)-len(s.lstrip('#')); text=s[n:].strip(); sizes={1:20,2:14,3:11.5}; self.y-=8 if n<3 else 2
+    # Reserve enough space for the heading plus a table header/first row when
+    # the next nonblank block is a table.
+    look=index+1
+    while look<len(lines) and not lines[look].strip(): look+=1
+    if look<len(lines) and is_table_start(lines,look) and self.y-BOTTOM<85: self.new(self.page.head)
     size=sizes.get(n,11); self.styled_block(text,size,True,gap=size+5)
     self.y-=5
    elif s.startswith('> '): flush(); self.paragraph(s[2:],quote=True)
@@ -303,8 +412,9 @@ class Renderer:
    elif self.toc and re.match(r'^\d+\.\s+',s):
     flush(); m=re.match(r'^(\d+)\.\s+(.*)',s); slugs=['glossary','certification-roadmap','physical-preparation','family-guide','master-bibliography','source-notes']
     self.paragraph(m.group(2),internal=f'appendix-{slugs[int(m.group(1))-1]}')
-   elif s.startswith('|'): flush(); self.paragraph(s.replace('|','  '))
+   elif s.startswith('|'): flush(); self.paragraph(s)
    else: para.append(s)
+   index+=1
   if fence: raise SystemExit(f'Unclosed Markdown fence in {path.relative_to(ROOT)}')
   flush()
  def render(self,files,out):
