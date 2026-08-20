@@ -80,7 +80,9 @@ class Renderer:
   x=LEFT+indent; maxx=W-RIGHT
   for span,link in spans:
    for token in re.findall(r'\s+|\S+',span):
-    token_width=width(token,10.5)
+    # Helvetica spaces are 278 units wide. Applying the average-letter width
+    # here made the gaps between separately positioned words look justified.
+    token_width=len(token)*10.5*.278 if token.isspace() else width(token,10.5)
     if not token.isspace() and x>LEFT+indent and x+token_width>maxx:
      self.y-=14; x=LEFT+indent
      if self.y-14<BOTTOM: self.new(self.page.head); x=LEFT+indent
