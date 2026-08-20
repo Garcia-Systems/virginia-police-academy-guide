@@ -4,4 +4,4 @@
 
 ## Planned Scope
 
-[The appendix named above is reserved in the publication manifest. Its detailed outline and verified content will be developed in a later PR.]
+The full bilingual glossary remains a later deliverable. Chapters 4–7 identify these controlled terms for that review: **call for service, patrol, citation, summons, reckless driving, crash report, preliminary investigation, evidence, chain of custody, witness, victim, protective order, crisis intervention, emergency custody order (ECO),** and **temporary detention order (TDO)**. Preferred Spanish pairs and legal cautions are maintained in `docs/TRANSLATION_GUIDE.md`; this planning note does not translate the chapters or make Spanish wording legally controlling.

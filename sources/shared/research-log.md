@@ -1,5 +1,12 @@
 # Shared Research Log
 
+## 2026-08-20 — English Chapters 4–7 research
+
+- **Scope:** patrol; Virginia traffic/crash law; investigation, evidence, and language access; family abuse/protective orders; emergency custody/temporary detention; child/adult mandatory reporting; victim and crisis services.
+- **Conclusion:** The chapters describe conceptual practice, not local tactics. Statutory examples are foundational and qualified where facts, exceptions, policy, or later law control.
+- **Uncertainty:** The external HTTPS tunnel returned 403 and web research service returned 401. Official locators must be reopened by a reviewer with ordinary access before publication. No unpublished HRCJTA sequence or JCCPD patrol, traffic, evidence, crash, interpreter, or crisis procedure is asserted.
+- **Safety/editorial boundary:** Excluded vehicle-approach tactics, tactical entries, resistance methods, hazardous-evidence handling, device bypass, covert surveillance, and manipulative interrogation. Spanish Chapters 4–7 remain placeholders; only terminology planning changed.
+
 ## 2026-08-19 — Virginia initial-training framework and 2027 transition
 
 - **Scope:** Code of Virginia certification authority; 6VAC20-20; DCJS training and performance-outcome materials.
