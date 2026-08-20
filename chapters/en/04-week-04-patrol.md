@@ -1,5 +1,7 @@
 # Chapter 4 — Week 4: Patrol Fundamentals
 
+![Conceptual diagram for Chapter 4](../../images/chapters/en/04.png)
+
 > **Editorial sequence.** In this book, Week 4 turns from foundational classroom concepts toward patrol work. It does not state when HRCJTA teaches this material or prescribe JCCPD procedure.
 
 ## Opening

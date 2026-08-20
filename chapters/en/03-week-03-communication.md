@@ -1,5 +1,7 @@
 # Chapter 3 — Week 3: Communication, Radio & Report Writing
 
+![Conceptual diagram for Chapter 3](../../images/chapters/en/03.png)
+
 > **RESEARCH DRAFT — FACTUAL REVIEW REQUESTED.** Sources were checked as of August 19, 2026. “Week 3” is editorial. No public source reviewed for this draft established JCCPD radio codes, report format, or communications procedures; those remain matters for agency and academy instruction.
 
 ## Opening

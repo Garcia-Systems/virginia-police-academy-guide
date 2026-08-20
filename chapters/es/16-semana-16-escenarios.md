@@ -1,5 +1,7 @@
 # Capítulo 16 — Semana 16: Escenarios Policiales Integrados
 
+![Diagrama conceptual del Capítulo 16](../../images/chapters/es/16.png)
+
 > **Secuencia editorial y estado de la investigación.** En este libro, la Semana 16 reúne materias que antes se estudiaron por separado. No se afirma que HRCJTA programe una «semana de escenarios integrados» en este momento. Las fuentes se revisaron para la edición del 20 de agosto de 2026; ninguna fuente pública consultada reveló los guiones, instrumentos de puntuación ni calendario interno de escenarios de HRCJTA. Rigen la instrucción vigente y la política de la agencia.
 
 ## Apertura

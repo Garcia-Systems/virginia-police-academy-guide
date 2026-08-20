@@ -1,5 +1,7 @@
 # Capítulo 6 — Semana 6: Investigaciones criminales y evidencia
 
+![Diagrama conceptual del Capítulo 6](../../images/chapters/es/06.png)
+
 > **Secuencia editorial.** La Semana 6 es una organización de este libro. No describe el calendario de HRCJTA, las asignaciones investigativas de JCCPD, su política de evidencia ni su práctica local de interpretación.
 
 ## Apertura

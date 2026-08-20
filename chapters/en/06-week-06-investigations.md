@@ -1,5 +1,7 @@
 # Chapter 6 — Week 6: Criminal Investigations & Evidence
 
+![Conceptual diagram for Chapter 6](../../images/chapters/en/06.png)
+
 > **Editorial sequence.** Week 6 is this book's organization. It does not describe the HRCJTA calendar, JCCPD investigative assignment, evidence policy, or local interpreter practice.
 
 ## Opening

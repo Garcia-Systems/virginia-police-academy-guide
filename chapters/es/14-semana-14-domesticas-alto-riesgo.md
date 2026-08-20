@@ -1,5 +1,7 @@
 # Capítulo 14 — Semana 14: Llamadas por violencia doméstica y encuentros de alto riesgo
 
+![Diagrama conceptual del Capítulo 14](../../images/chapters/es/14.png)
+
 > **Secuencia editorial y límite de seguridad.** La Semana 14 pertenece a la secuencia del libro, no a un calendario publicado de HRCJTA. Las fuentes se revisaron para la edición del 20 de agosto de 2026. **Encuentro de alto riesgo — high-risk encounter** describe peligro o incertidumbre elevados; no introduce tácticas de entrada, emboscada, posición, desarme ni respuesta a agresiones. Controlan ley, formación supervisada y política vigentes.
 
 ## Apertura

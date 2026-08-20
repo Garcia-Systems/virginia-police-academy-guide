@@ -1,5 +1,7 @@
 # Chapter 0 — Before the Academy: What You’re About to Begin
 
+![Conceptual diagram for Chapter 0](../../images/chapters/en/00.png)
+
 > **RESEARCH DRAFT — FACTUAL REVIEW REQUESTED.** Sources were checked against official materials available as of August 19, 2026. The book’s week labels are an editorial learning journey, not a representation of HRCJTA’s unpublished schedule. Confirm cohort-specific requirements with DCJS, HRCJTA, and James City County Police Department (JCCPD).
 
 ## Opening

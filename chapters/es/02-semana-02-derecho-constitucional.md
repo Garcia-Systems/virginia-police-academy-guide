@@ -1,5 +1,7 @@
 # Capítulo 2 — Semana 2: Derecho constitucional y autoridad policial
 
+![Diagrama conceptual del Capítulo 2](../../images/chapters/es/02.png)
+
 > **BORRADOR INVESTIGADO — REVISIÓN FACTUAL SOLICITADA.** Autoridades comprobadas al 19 de agosto de 2026. «Semana 2» es una secuencia editorial, no el horario de HRCJTA. Este capítulo educa; no ofrece asesoría jurídica. Rigen la instrucción actual, precedentes vinculantes, ley de Virginia, políticas, fiscalía y tribunales.
 
 ## Apertura

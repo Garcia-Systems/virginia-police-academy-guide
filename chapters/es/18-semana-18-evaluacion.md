@@ -1,5 +1,7 @@
 # Capítulo 18 — Semana 18: Pruebas, Cualificación y Preparación para el Examen Estatal
 
+![Diagrama conceptual del Capítulo 18](../../images/chapters/es/18.png)
+
 > **Secuencia editorial y advertencia de vigencia.** La Semana 18 pertenece a la secuencia de este libro; no es un calendario de pruebas publicado por HRCJTA. Las fuentes se revisaron para la edición del 20 de agosto de 2026. No deben mezclarse el marco de Virginia actualmente vigente y los materiales de DCJS adoptados para entrar en vigor el **1 de enero de 2027**. DCJS, la academia y la agencia empleadora deben resolver las preguntas de transición de cada promoción. Aquí no se afirma una puntuación, un número de repeticiones ni un calendario de examen final de HRCJTA.
 
 ## Apertura

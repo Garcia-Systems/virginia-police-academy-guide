@@ -1,5 +1,7 @@
 # Chapter 15 — Week 15: First Aid & Emergency Response
 
+![Conceptual diagram for Chapter 15](../../images/chapters/en/15.png)
+
 > **Editorial sequence and medical disclaimer.** Week 15 is this book's learning sequence, not a published HRCJTA schedule. Sources were reviewed for the August 20, 2026 edition. **Written explanation cannot replace hands-on CPR, AED, first-aid, bleeding-control, or EMS instruction.** Follow current certification, medical direction, dispatch guidance, equipment instructions, and agency policy.
 
 ## Opening

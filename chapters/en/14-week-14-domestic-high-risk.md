@@ -1,5 +1,7 @@
 # Chapter 14 — Week 14: Domestic Calls & High-Risk Encounters
 
+![Conceptual diagram for Chapter 14](../../images/chapters/en/14.png)
+
 > **Editorial sequence and safety boundary.** Week 14 is this book's sequence, not a published HRCJTA schedule. Sources were reviewed for the August 20, 2026 edition. “High-risk” describes elevated danger or uncertainty; it does not introduce entry, ambush, positioning, disarming, or assault-response tactics. Current law, supervised training, and policy control.
 
 ## Opening

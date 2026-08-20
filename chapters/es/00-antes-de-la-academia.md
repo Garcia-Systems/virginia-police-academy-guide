@@ -1,5 +1,7 @@
 # Capítulo 0 — Antes de la academia: Lo que está por comenzar
 
+![Diagrama conceptual del Capítulo 0](../../images/chapters/es/00.png)
+
 > **BORRADOR INVESTIGADO — REVISIÓN FACTUAL SOLICITADA.** Las fuentes se comprobaron con materiales oficiales disponibles al 19 de agosto de 2026. Las semanas del libro son un recorrido editorial, no el calendario no publicado de HRCJTA. Confirme los requisitos de su promoción con DCJS, HRCJTA y James City County Police Department (JCCPD).
 
 ## Apertura

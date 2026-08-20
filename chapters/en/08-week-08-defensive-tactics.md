@@ -1,5 +1,7 @@
 # Chapter 8 — Week 8: Defensive Tactics & Custody
 
+![Conceptual diagram for Chapter 8](../../images/chapters/en/08.png)
+
 > **Editorial sequence and research status.** Week 8 is this book's learning sequence, not a claim about HRCJTA's calendar or JCCPD procedure. Authorities were reviewed for the August 20, 2026 edition; current law, academy instruction, agency policy, supervision, and medical direction control. This chapter explains responsibilities, not physical-control techniques.
 
 ## Opening

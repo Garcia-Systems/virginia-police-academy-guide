@@ -1,5 +1,7 @@
 # Chapter 12 — Week 12: Emergency Vehicle Operations
 
+![Conceptual diagram for Chapter 12](../../images/chapters/en/12.png)
+
 > **Editorial sequence and research status.** Week 12 is this book's learning sequence, not a published HRCJTA schedule or JCCPD response category. Sources were reviewed for the August 20, 2026 edition. Current law, academy instruction, and agency policy—not this overview—control.
 
 ## Opening

@@ -1,5 +1,7 @@
 # Chapter 21 — The First Year: From Recruit to Working Officer
 
+![Conceptual diagram for Chapter 21](../../images/chapters/en/21.png)
+
 > **Research and timeline limitation.** This chapter describes professional development, not a JCCPD calendar. Sources were reviewed for the August 20, 2026 edition. Public material reviewed did not verify James City County Police's probation length, review frequency, extension or termination rules, solo-release milestone, shift pattern, or benefits. Current county HR documents, appointment terms, agency policy, and supervisors control those details.
 
 ## Opening

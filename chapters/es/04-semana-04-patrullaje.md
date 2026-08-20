@@ -1,5 +1,7 @@
 # Capítulo 4 — Semana 4: Fundamentos del patrullaje
 
+![Diagrama conceptual del Capítulo 4](../../images/chapters/es/04.png)
+
 > **Secuencia editorial.** En este libro, la Semana 4 pasa de los fundamentos del aula al trabajo de patrullaje. No afirma cuándo HRCJTA enseña este material ni prescribe procedimientos de JCCPD.
 
 ## Apertura

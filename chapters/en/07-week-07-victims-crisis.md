@@ -1,5 +1,7 @@
 # Chapter 7 — Week 7: Victims, Crisis Response & Vulnerable Populations
 
+![Conceptual diagram for Chapter 7](../../images/chapters/en/07.png)
+
 > **Editorial sequence.** Week 7 is the book's sequence, not a representation of HRCJTA scheduling or JCCPD response policy. Virginia legal references were reviewed as current on August 20, 2026; fact-dependent decisions require current law, policy, supervision, and professional partners.
 
 ## Opening

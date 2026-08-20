@@ -1,5 +1,7 @@
 # Chapter 16 — Week 16: Integrated Police Scenarios
 
+![Conceptual diagram for Chapter 16](../../images/chapters/en/16.png)
+
 > **Editorial sequence and research status.** In this book, Week 16 brings previously separated subjects together. It is not a claim that HRCJTA schedules an “integrated scenario week” at this point. Sources were reviewed for the August 20, 2026 edition; no public source reviewed disclosed HRCJTA's scenario scripts, scoring instruments, or internal schedule. Current instruction and agency policy control.
 
 ## Opening

@@ -1,5 +1,7 @@
 # Chapter 5 — Week 5: Traffic Law, Stops & Crash Response
 
+![Conceptual diagram for Chapter 5](../../images/chapters/en/05.png)
+
 > **Editorial sequence.** “Week 5” belongs to this book's learning plan, not a claim about HRCJTA's calendar or JCCPD traffic procedure. Virginia law cited here was reviewed as current on August 20, 2026; officers must use current law, policy, and instruction.
 
 ## Opening

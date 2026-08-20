@@ -1,5 +1,7 @@
 # Chapter 18 — Week 18: Testing, Qualification & State Exam Preparation
 
+![Conceptual diagram for Chapter 18](../../images/chapters/en/18.png)
+
 > **Editorial sequence and currency warning.** Week 18 is this book's sequence, not a published HRCJTA testing calendar. Sources were reviewed for the August 20, 2026 edition. Virginia's currently effective framework and DCJS materials adopted for implementation on **January 1, 2027** must not be blended. DCJS, the academy, and the employing agency must resolve cohort transition questions. No public HRCJTA score, retest count, or final-exam calendar is asserted here.
 
 ## Opening

@@ -1,5 +1,7 @@
 # Capítulo 21 — El Primer Año: De Recluta a Agente en Funciones
 
+![Diagrama conceptual del Capítulo 21](../../images/chapters/es/21.png)
+
 > **Limitación de la investigación y del calendario.** Este capítulo describe el desarrollo profesional, no un calendario de JCCPD. Las fuentes se revisaron para la edición del 20 de agosto de 2026. Los materiales públicos revisados no verifican la duración del período probatorio, la frecuencia de las evaluaciones, las reglas de prórroga o terminación, el momento de autorización para patrullaje sin FTO inmediato, el patrón de turnos ni las prestaciones de James City County Police. Rigen los documentos vigentes de recursos humanos del condado, las condiciones del nombramiento, la política de la agencia y las instrucciones de supervisión.
 
 ## Apertura

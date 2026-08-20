@@ -1,5 +1,7 @@
 # Chapter 19 — Week 19: Finishing the Academy & Graduation
 
+![Conceptual diagram for Chapter 19](../../images/chapters/en/19.png)
+
 > **Editorial sequence and ceremony limitation.** Week 19 completes this book's editorial academy journey; it is not a published HRCJTA final-week schedule. Sources were reviewed for the August 20, 2026 edition. Public materials reviewed did not establish HRCJTA's current ceremony, family procedures, attire, awards, badge presentation, or final administrative sequence. This chapter does not invent them.
 
 ## Opening

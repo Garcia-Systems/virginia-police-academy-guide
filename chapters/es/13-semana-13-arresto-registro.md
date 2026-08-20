@@ -1,5 +1,7 @@
 # Capítulo 13 — Semana 13: Arresto, registro y manejo de personas bajo custodia
 
+![Diagrama conceptual del Capítulo 13](../../images/chapters/es/13.png)
+
 > **Secuencia editorial y estado de la investigación.** La Semana 13 pertenece a la secuencia del libro, no a un calendario publicado de HRCJTA. Las autoridades se revisaron para la edición del 20 de agosto de 2026. Este panorama jurídico no es una referencia de campo; controlan la ley y jurisprudencia vigentes, la instrucción y la política.
 
 ## Apertura

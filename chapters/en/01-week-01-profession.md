@@ -1,5 +1,7 @@
 # Chapter 1 — Week 1: The Profession, Academy Culture & Expectations
 
+![Conceptual diagram for Chapter 1](../../images/chapters/en/01.png)
+
 > **RESEARCH DRAFT — FACTUAL REVIEW REQUESTED.** Sources were checked as of August 19, 2026. “Week 1” is this book’s editorial placement; no claim is made about HRCJTA’s actual sequence or internal rules.
 
 ## Opening

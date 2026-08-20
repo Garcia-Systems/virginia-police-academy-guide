@@ -1,5 +1,7 @@
 # Chapter 13 — Week 13: Arrest, Search & Prisoner Handling
 
+![Conceptual diagram for Chapter 13](../../images/chapters/en/13.png)
+
 > **Editorial sequence and research status.** Week 13 is this book's sequence, not a published HRCJTA schedule. Authorities were reviewed for the August 20, 2026 edition. This legal overview is not a field reference; current law, judicial decisions, instruction, and policy control.
 
 ## Opening

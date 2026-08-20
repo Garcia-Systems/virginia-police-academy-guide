@@ -1,5 +1,7 @@
 # Capítulo 17 — Semana 17: Juicio Bajo Presión y Remediación
 
+![Diagrama conceptual del Capítulo 17](../../images/chapters/es/17.png)
+
 > **Secuencia editorial y límite de la política local.** La Semana 17 pertenece a la secuencia de aprendizaje de este libro; no es un calendario publicado de HRCJTA. Las fuentes se revisaron para la edición del 20 de agosto de 2026. No se localizó una regla pública de HRCJTA sobre remediación, repetición de pruebas, límite de intentos o separación del programa. Rigen las normas estatales, las reglas de la academia, la política de la agencia y las instrucciones dadas a la recluta.
 
 ## Apertura

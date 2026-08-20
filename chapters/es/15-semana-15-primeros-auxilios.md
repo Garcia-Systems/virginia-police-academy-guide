@@ -1,5 +1,7 @@
 # Capítulo 15 — Semana 15: Primeros auxilios y respuesta a emergencias
 
+![Diagrama conceptual del Capítulo 15](../../images/chapters/es/15.png)
+
 > **Secuencia editorial y advertencia médica.** La Semana 15 pertenece al recorrido del libro, no a un calendario publicado de HRCJTA. Las fuentes se revisaron para la edición del 20 de agosto de 2026. **Una explicación escrita no sustituye la certificación práctica en CPR, la instrucción en AED, primeros auxilios, control de hemorragias ni educación de EMS.** Siga certificación, dirección médica, orientación de *dispatch*, instrucciones del equipo y política de agencia vigentes.
 
 ## Apertura

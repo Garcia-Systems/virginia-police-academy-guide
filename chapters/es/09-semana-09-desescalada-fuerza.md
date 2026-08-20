@@ -1,5 +1,7 @@
 # Capítulo 9 — Semana 9: Desescalamiento y decisiones sobre el uso de la fuerza
 
+![Diagrama conceptual del Capítulo 9](../../images/chapters/es/09.png)
+
 > **Secuencia editorial y estado de la investigación.** La Semana 9 pertenece a la secuencia del libro; no es un calendario publicado de HRCJTA ni la política de fuerza de JCCPD. Las autoridades se revisaron para la edición del 20 de agosto de 2026. El derecho cambia y depende intensamente de los hechos; rigen la ley vigente, la instrucción de DCJS, la política de la agencia y el asesoramiento jurídico. Aquí no se enseña ninguna técnica física.
 
 ## Apertura

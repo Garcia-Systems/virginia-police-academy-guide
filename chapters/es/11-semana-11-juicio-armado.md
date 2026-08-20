@@ -1,5 +1,7 @@
 # Capítulo 11 — Semana 11: Decisiones armadas y juicio táctico
 
+![Diagrama conceptual del Capítulo 11](../../images/chapters/es/11.png)
+
 > **Secuencia editorial y estado de la investigación.** La Semana 11 pertenece al recorrido didáctico del libro; no es un calendario publicado de HRCJTA ni procedimiento táctico de JCCPD. Las fuentes se revisaron para la edición del 20 de agosto de 2026. Aquí, **juicio táctico — tactical judgment** significa valoración lícita, mesura, comunicación, atención al entorno y rendición de cuentas, no instrucción de combate.
 
 ## Apertura
