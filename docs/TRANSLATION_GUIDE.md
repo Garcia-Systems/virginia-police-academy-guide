@@ -26,6 +26,17 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | de-escalation | desescalamiento | Preferido para el proceso profesional |
 | dispatch | despacho / *dispatch* | Conservar *dispatch* como vocabulario operativo |
 | field training | entrenamiento de campo | Introducir Field Training Officer (FTO) |
+| trainee officer | agente en entrenamiento | Distinguir de recluta de academia y de agente en período probatorio |
+| solo patrol | patrullaje sin FTO inmediato / patrullaje individual | No implica ausencia de supervisión ni una fase local verificada |
+| in-service training | capacitación en servicio | Distinguir requisito DCJS de capacitación específica de agencia |
+| continuing education | educación continua | Verificar si la fuente usa un término regulatorio más preciso |
+| roll call / briefing | pase de lista / reunión informativa | Elegir según función; no inventar práctica local |
+| shift work | trabajo por turnos | No inferir horario de JCCPD |
+| overtime | horas extra | Término laboral; política de RR. HH. controla |
+| court appearance | comparecencia ante el tribunal | Distinguir función de testigo, denunciante o agente investigador |
+| testimony | testimonio | Enfatizar veracidad, memoria y reglas probatorias |
+| employee assistance program (EAP) | programa de asistencia al empleado (EAP) | Verificar nombre, acceso y confidencialidad locales |
+| peer support | apoyo entre pares | No equivale automáticamente a atención clínica ni confidencialidad legal |
 | integrated scenario | escenario integrado | No implica una secuencia táctica ni una semana oficial de HRCJTA |
 | scenario-based training | capacitación basada en escenarios | Distinguir instrucción de evaluación cuando la fuente lo haga |
 | remediation | instrucción correctiva / remediación | Preferir explicación funcional; nunca prometer repetición de prueba |

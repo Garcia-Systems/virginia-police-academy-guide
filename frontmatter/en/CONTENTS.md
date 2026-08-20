@@ -28,5 +28,5 @@
 - Chapter 19: Week 19: Finishing the Academy & Graduation
 ## After the Academy
 
-- Chapter 20: Field Training: Learning to Be a Working Officer
-- Chapter 21: The First Year: From Recruit to Police Officer
+- Chapter 20: After the Academy: Field Training
+- Chapter 21: The First Year: From Recruit to Working Officer

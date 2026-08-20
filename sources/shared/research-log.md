@@ -106,3 +106,14 @@
 
 - Direct requests to DCJS, Virginia Law, HRCJTA, and James City County returned `CONNECT tunnel failed, response 403` from this environment. This is an environment limitation rather than evidence that each destination is unavailable.
 - All entries retain access date for editorial traceability, but publication review must open every URL, correct redirects, and record page revision/current-through dates where displayed.
+
+## 2026-08-20 — English Chapters 20–21: field training and first-year formation
+
+- **Scope:** General FTO purpose and evaluation; jurisdiction learning; radio/report transition; ordinary calls; increasing independence; court testimony; shift work; probation; Virginia in-service training; impartiality; errors and reputation; officer/family wellness; and early-career development.
+- **James City County finding:** Public recruiting and county geographic pages supplied employment and public-jurisdiction context only. They did **not** verify JCCPD FTO title/model, phases, duration, forms, report system, shift rotation, release criteria, probation length, review/extension/termination rules, or local wellness benefits. Chapters 20–21 expressly leave these to current HR and agency documents.
+- **Virginia continuing training:** 6VAC20-30 was identified as the controlling compulsory in-service chapter. Chapter 21 conservatively records the 40-hour/two-year framework and separately identified annual firearms retraining, while directing readers to operative text/DCJS for allocations, eligibility, exemptions, delivery, and records. Because web access was blocked, a reviewer must reopen the regulation and check intervening amendments before publication.
+- **Field-training scope:** NIJ's historical FTO overview and federal professional resources support general coaching/evaluation concepts only. No national model is attributed to JCCPD.
+- **Testimony and records:** Current Virginia Rules of Evidence locators support the distinction between independent recollection, refreshed recollection, and recorded recollection. The chapter offers truthfulness/preparation principles, not litigation coaching.
+- **Wellness/family scope:** NIOSH shift-work resources and DOJ COPS/NIJ wellness collections support qualified discussion of fatigue risks, support systems, substance-misuse awareness, and family communication. No diagnosis, universal outcome, treatment, local schedule, or local benefit is asserted.
+- **Continuity:** Chapter 19 already distinguished graduation, certification, employment, probation, and field training; Chapters 20–21 carry those distinctions forward. English Chapters 0–21 now contain substantive content. Spanish Chapters 20–21 intentionally remain placeholders for the next PR.
+- **Research limitation:** Web research returned 401 and direct HTTPS returned tunnel 403. All new locators require ordinary-network link and currency review before publication.
