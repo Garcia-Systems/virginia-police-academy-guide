@@ -67,6 +67,22 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | victim / witness | víctima / testigo | Mantener atribución precisa y lenguaje centrado en la persona |
 | traffic stop | parada de tráfico | Conservar inglés en enseñanza de radio |
 | warrant | orden judicial / *warrant* | Enseñar vocabulario profesional |
+| authorized emergency vehicle | vehículo de emergencia autorizado | Categoría estatutaria; no todo vehículo oficial está incluido |
+| due regard | debida consideración por la seguridad | Explicar como deber jurídico continuo; evitar traducción que sugiera inmunidad |
+| pursuit | persecución vehicular | Definición y autorización dependen de política; sin técnicas operativas |
+| arrest authority | autoridad para arrestar | Distinguir orden judicial de autoridad sin orden |
+| search incident to arrest | registro incidental a un arresto legal | Excepción de alcance jurídico limitado |
+| personal property / safekeeping property | bienes personales / bienes bajo custodia protectora | Distinguir de evidencia y contrabando |
+| booking | procesamiento de ingreso | El proceso y vocabulario varían por centro receptor |
+| magistrate | magistrado de Virginia | Funcionario judicial independiente; no asumir equivalencia institucional extranjera |
+| emergency protective order | orden de protección de emergencia | Conservar el término inglés al introducir y verificar vigencia exacta |
+| predominant physical aggressor | agresor físico predominante | Término estatutario; no equivale a quien parezca más grande o más alterado |
+| emergency medical services (EMS) | servicios médicos de emergencia (EMS) | Conservar sigla profesional inglesa cuando resulte útil |
+| cardiopulmonary resuscitation (CPR) | reanimación cardiopulmonar (RCP/CPR) | Preparar decisión sobre siglas; Virginia opera profesionalmente en inglés |
+| automated external defibrillator (AED) | desfibrilador externo automático (DEA/AED) | Introducir ambas siglas; no sustituye instrucción certificada |
+| naloxone | naloxona | Medicamento de reversión de sobredosis; no reemplaza EMS |
+| severe bleeding | hemorragia grave | Mantener lenguaje público de primeros auxilios, no procedimiento avanzado |
+| occupational exposure | exposición ocupacional | Contexto de sangre/fluidos y seguimiento médico laboral |
 
 ## Adapt, do not transpose
 

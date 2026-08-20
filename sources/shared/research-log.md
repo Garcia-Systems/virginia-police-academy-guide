@@ -1,5 +1,14 @@
 # Shared Research Log
 
+## 2026-08-20 — English Chapters 12–15 research
+
+- **Scope:** Virginia emergency-vehicle exemptions and warning equipment; response and pursuit judgment; arrest, summons, search-warrant, property, magistrate, and custody processes; family-abuse definitions, predominant-aggressor analysis, protective orders, and child reporting; CPR/AED, bleeding, naloxone, bloodborne exposure, and custody medical care.
+- **Primary authorities:** *Code of Virginia* Titles 16.1, 18.2, 19.2, 46.2, and 63.2; Virginia Judicial System magistrate and protective-order materials; Virginia DCJS and VDH/EMS resources; official Supreme Court opinions; NHTSA, CDC, OSHA, AHA, SAMHSA, Red Cross, and American College of Surgeons public guidance.
+- **Currency limitation:** Internet research calls returned HTTP 401 and direct official-site requests returned `CONNECT tunnel failed, response 403` on August 20, 2026. Records therefore identify official current-code/resource locators, but a reviewer with ordinary access must reopen every source, verify page titles and current-through/effective dates, and check intervening amendments before publication. Claims are conservative and direct readers to operative text.
+- **Agency boundary:** No accessible public source verified JCCPD response priorities, pursuit policy, vehicle checklist, crash procedure, arrest/search method, transport/property procedure, domestic-call procedure, medical protocol, or an HRCJTA week sequence. The chapters do not infer these.
+- **Safety review:** Excluded pursuit and intervention driving, high-speed handling, arrest/restraint mechanics, contraband-location methods, transport escape prevention, domestic entry/positioning, weapon disarming, and advanced trauma procedures. Content remains law, judgment, communication, safety, medical activation, accountability, and supervised training.
+- **Translation preparation:** Added controlled planning entries for authorized emergency vehicles, due regard, pursuit, arrest authority, search incident to arrest, property, booking, Virginia magistrates, emergency protective orders, predominant physical aggressor, EMS, CPR/AED, naloxone, severe bleeding, and occupational exposure. Spanish Chapters 12–15 remain placeholders.
+
 ## 2026-08-20 — Spanish Chapters 8–11 adaptation
 
 - **Canonical basis:** Adapted the complete stable English Chapters 8–11 without adding Spanish-only factual claims or operational detail.
