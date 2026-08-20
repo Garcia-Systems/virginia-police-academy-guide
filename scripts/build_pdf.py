@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Dependency-free, deterministic Markdown-to-PDF skeleton builder."""
 from __future__ import annotations
-import argparse, importlib.util, re, sys
+import argparse, importlib.util, re, struct, sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 W,H=612,792; LEFT,RIGHT,TOP,BOTTOM=58,58,60,52
 URL_RE=re.compile(r'\[([^]]+)\]\((https?://[^)]+)\)|(https?://\S+)')
+IMAGE_RE=re.compile(r'^!\[([^]]*)\]\(([^)]+\.png)\)$', re.IGNORECASE)
 
 def load_manifest():
  spec=importlib.util.spec_from_file_location('manifest',ROOT/'book_manifest.py'); mod=importlib.util.module_from_spec(spec); spec.loader.exec_module(mod); return mod.BOOKS
@@ -36,7 +37,7 @@ def wrap(s,size,maxw,bold=False):
  return out or ['']
 @dataclass
 class Page:
- head:str; ops:list[str]=field(default_factory=list); links:list[tuple]=field(default_factory=list)
+ head:str; ops:list[str]=field(default_factory=list); links:list[tuple]=field(default_factory=list); images:dict[Path,str]=field(default_factory=dict)
 class Renderer:
  def __init__(self,title,lang): self.title=title; self.lang=lang; self.pages=[]; self.page=None; self.y=0
  def new(self,head=''):
@@ -54,6 +55,19 @@ class Renderer:
   for i,l in enumerate(wrap(prefix+text,10.5,W-LEFT-RIGHT-indent)):
    self.line(l,indent=indent,url=url if i==0 else None,gap=14)
   self.y-=5
+ def image(self,path):
+  image=read_png(path)
+  draw_w=W-LEFT-RIGHT; draw_h=draw_w*image.height/image.width
+  # Do not make a detailed diagram tiny merely to use the bottom of a page.
+  if self.y-BOTTOM < draw_h*.7: self.new(self.page.head)
+  available=self.y-BOTTOM
+  if draw_h>available:
+   scale=available/draw_h; draw_w*=scale; draw_h*=scale
+  x=LEFT+(W-LEFT-RIGHT-draw_w)/2; y=self.y-draw_h
+  name=f'Im{len(self.page.images)+1}'
+  self.page.images[path]=name
+  self.page.ops.append(f'q {draw_w:.2f} 0 0 {draw_h:.2f} {x:.2f} {y:.2f} cm /{name} Do Q')
+  self.y=y-14
  def document(self,path):
   lines=path.read_text(encoding='utf-8').splitlines(); title=plain(lines[0][2:])
   self.new(title)
@@ -64,7 +78,13 @@ class Renderer:
   for raw in lines[1:]:
    s=raw.strip()
    if not s: flush(); continue
-   if s.startswith('#'):
+   image_match=IMAGE_RE.match(s)
+   if image_match:
+    flush(); image_path=(path.parent/image_match.group(2)).resolve()
+    if not image_path.is_file():
+     raise SystemExit(f'Missing Markdown image: source={path.relative_to(ROOT)} reference={image_match.group(2)}')
+    self.image(image_path)
+   elif s.startswith('#'):
     flush(); n=len(s)-len(s.lstrip('#')); text=s[n:].strip(); sizes={1:20,2:14,3:11.5}; self.y-=8 if n<3 else 2
     for l in wrap(text,sizes.get(n,11),W-LEFT-RIGHT,True): self.line(l,sizes.get(n,11),True,gap=sizes.get(n,11)+5)
     self.y-=5
@@ -86,6 +106,14 @@ class PDF:
  def add(self,b): self.objs.append(b if isinstance(b,bytes) else b.encode('latin1','replace')); return len(self.objs)
  def write(self,path):
   catalog=self.add(b''); pages_id=self.add(b''); f1=self.add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>'); f2=self.add('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>')
+  image_ids={}
+  for image_path in dict.fromkeys(image_path for page in self.pages for image_path in page.images):
+   image=read_png(image_path)
+   header=(f'<< /Type /XObject /Subtype /Image /Width {image.width} /Height {image.height} '
+           f'/ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /FlateDecode '
+           f'/DecodeParms << /Predictor 15 /Colors 3 /BitsPerComponent 8 /Columns {image.width} >> '
+           f'/Length {len(image.data)} >>\nstream\n').encode()
+   image_ids[image_path]=self.add(header+image.data+b'\nendstream')
   page_ids=[]
   for no,p in enumerate(self.pages,1):
    ops=list(p.ops); head=p.head or self.title
@@ -95,7 +123,9 @@ class PDF:
    for x1,y1,x2,y2,url in p.links:
     anns.append(self.add(f'<< /Type /Annot /Subtype /Link /Rect [{x1:.1f} {y1:.1f} {x2:.1f} {y2:.1f}] /Border [0 0 0] /A << /S /URI /URI ({esc(url)}) >> >>'))
    aid=(' /Annots ['+' '.join(f'{x} 0 R' for x in anns)+']') if anns else ''
-   page_ids.append(self.add(f'<< /Type /Page /Parent {pages_id} 0 R /MediaBox [0 0 {W} {H}] /Resources << /Font << /F1 {f1} 0 R /F2 {f2} 0 R >> >> /Contents {content} 0 R{aid} >>'))
+   xobjects=' '.join(f'/{name} {image_ids[image_path]} 0 R' for image_path,name in p.images.items())
+   image_resources=f' /XObject << {xobjects} >>' if xobjects else ''
+   page_ids.append(self.add(f'<< /Type /Page /Parent {pages_id} 0 R /MediaBox [0 0 {W} {H}] /Resources << /Font << /F1 {f1} 0 R /F2 {f2} 0 R >>{image_resources} >> /Contents {content} 0 R{aid} >>'))
   self.objs[pages_id-1]=f"<< /Type /Pages /Count {len(page_ids)} /Kids [{' '.join(f'{x} 0 R' for x in page_ids)}] >>".encode()
   self.objs[catalog-1]=f'<< /Type /Catalog /Pages {pages_id} 0 R /Lang ({self.lang}) >>'.encode()
   info=self.add(f'<< /Title ({esc(self.title)}) /Creator (Virginia Police Academy Guide deterministic builder) >>')
@@ -105,6 +135,26 @@ class PDF:
   for off in offsets[1:]: data+=f'{off:010d} 00000 n \n'.encode()
   data+=f'trailer\n<< /Size {len(self.objs)+1} /Root {catalog} 0 R /Info {info} 0 R >>\nstartxref\n{xref}\n%%EOF\n'.encode()
   path.parent.mkdir(exist_ok=True); path.write_bytes(data)
+
+@dataclass(frozen=True)
+class PNG:
+ width:int; height:int; data:bytes
+
+def read_png(path):
+ """Return PDF-ready scanlines from an 8-bit, non-interlaced RGB PNG."""
+ data=path.read_bytes()
+ if data[:8]!=b'\x89PNG\r\n\x1a\n': raise SystemExit(f'Unsupported PNG (bad signature): {path}')
+ pos=8; width=height=None; compressed=[]
+ while pos<len(data):
+  length=struct.unpack('>I',data[pos:pos+4])[0]; kind=data[pos+4:pos+8]; chunk=data[pos+8:pos+8+length]; pos+=length+12
+  if kind==b'IHDR':
+   width,height,depth,color,compression,png_filter,interlace=struct.unpack('>IIBBBBB',chunk)
+   if (depth,color,compression,png_filter,interlace)!=(8,2,0,0,0):
+    raise SystemExit(f'Unsupported PNG format in {path}: requires 8-bit non-interlaced RGB')
+  elif kind==b'IDAT': compressed.append(chunk)
+  elif kind==b'IEND': break
+ if width is None or not compressed: raise SystemExit(f'Unsupported PNG (missing image data): {path}')
+ return PNG(width,height,b''.join(compressed))
 def main():
  ap=argparse.ArgumentParser(); ap.add_argument('language',choices=('en','es')); ap.add_argument('--validate-only',action='store_true'); a=ap.parse_args(); cfg=load_manifest()[a.language]; files=validate(cfg,a.language)
  if a.validate_only: print(f'Validated {a.language}: {len(files)} ordered source files'); return
