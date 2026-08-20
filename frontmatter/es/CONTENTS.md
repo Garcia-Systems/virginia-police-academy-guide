@@ -23,8 +23,8 @@
 - Capítulo 14: Semana 14: Llamadas Domésticas y Encuentros de Alto Riesgo
 - Capítulo 15: Semana 15: Primeros Auxilios y Respuesta a Emergencias
 - Capítulo 16: Semana 16: Escenarios Policiales Integrados
-- Capítulo 17: Semana 17: Juicio Bajo Presión y Recuperación Formativa
-- Capítulo 18: Semana 18: Evaluación, Calificación y Preparación para el Examen Estatal
+- Capítulo 17: Semana 17: Juicio Bajo Presión y Remediación
+- Capítulo 18: Semana 18: Pruebas, Cualificación y Preparación para el Examen Estatal
 - Capítulo 19: Semana 19: Finalización de la Academia y Graduación
 ## Después de la Academia
 
