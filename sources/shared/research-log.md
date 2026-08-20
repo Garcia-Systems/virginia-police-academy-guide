@@ -1,5 +1,14 @@
 # Shared Research Log
 
+## 2026-08-20 — Spanish Chapters 8–11 adaptation
+
+- **Canonical basis:** Adapted the complete stable English Chapters 8–11 without adding Spanish-only factual claims or operational detail.
+- **Legal terminology:** Preferred *custodia*, *detención* and *arresto* as distinct concepts; *razonabilidad objetiva*, *fuerza letal*, *uso de la fuerza* and *deber de intervenir* preserve their controlling English terms at first introduction. Statute, DCJS, and agency-policy duties remain distinct.
+- **Professional terminology:** Preferred *desescalamiento* for the professional process; *medio de sujeción* for equipment and *restricción* contextually; *cualificación con armas de fuego* for the documented process; *boca del cañón*, *gatillo*, *decisión de disparar o no disparar*, and *incidente crítico*. Agency or instructor vocabulary may differ.
+- **Safety and fidelity review:** Compared legal propositions and qualifications to the English source and retained the exclusions on restraint mechanics, fighting, disarming, aiming, shooting drills, target selection, and tactical movement. Tentative stress and health claims remain qualified.
+- **Sources and English corrections:** Retained authoritative English-language sources, titles, case names, citations, and URLs. No Spanish-only supplemental source was needed, and adaptation revealed no verified English error.
+- **Open question:** HRCJTA/JCCPD-preferred local Spanish terminology and exact agency procedures remain for current instruction and policy; no local practice is inferred.
+
 ## 2026-08-20 — English Chapters 8–11 research
 
 - **Scope:** custody and restraint responsibility; search incident to arrest; medical monitoring; constitutional and Virginia force law; de-escalation and intervention; firearm safety and occupational health; judgment under uncertainty; stress, memory, critical-incident review, and wellness.

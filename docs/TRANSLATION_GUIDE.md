@@ -42,6 +42,7 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | warning | advertencia | No confundir con citación ni prometer resultado judicial |
 | witness | testigo | Precisar si es presencial y atribuir su base de conocimiento |
 | custody | custodia | Distinguir custodia policial, custodia de emergencia y custodia familiar; conservar el término jurídico inglés al introducirlo |
+| detention | detención | Restricción limitada de libertad; usar *detención investigativa* cuando ese sea el concepto y no confundir con arresto |
 | restraint | restricción / medio de sujeción | Elegir según acto, condición o equipo; nunca presentar como castigo |
 | resistance | resistencia | Las categorías exactas dependen de ley, norma, entrenamiento y política; describir conducta observable |
 | compliance | cumplimiento | Distinguir cumplimiento voluntario de coerción; evitar implicar obediencia personal al agente |
@@ -54,6 +55,7 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | muzzle | boca del cañón | Término de seguridad; confirmar preferencia del instructor/agencia |
 | trigger | gatillo / disparador | *Gatillo* es más accesible; conservar inglés en la primera enseñanza profesional si resulta útil |
 | threat | amenaza | Separar peligro observado, información recibida, inferencia e incertidumbre |
+| shoot/no-shoot decision | decisión de disparar o no disparar | Conservar *shoot/no-shoot decision* al introducirlo; es juicio jurídico-profesional, no destreza de puntería |
 | critical incident | incidente crítico | No implica automáticamente diagnóstico ni procedimiento específico de JCCPD |
 | objective reasonableness | razonabilidad objetiva | Conservar inglés al introducirlo |
 | police report | informe policial | Formato depende de la agencia |
