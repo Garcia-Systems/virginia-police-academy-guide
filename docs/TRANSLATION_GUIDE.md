@@ -26,6 +26,19 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | de-escalation | desescalamiento | Preferido para el proceso profesional |
 | dispatch | despacho / *dispatch* | Conservar *dispatch* como vocabulario operativo |
 | field training | entrenamiento de campo | Introducir Field Training Officer (FTO) |
+| integrated scenario | escenario integrado | No implica una secuencia táctica ni una semana oficial de HRCJTA |
+| scenario-based training | capacitación basada en escenarios | Distinguir instrucción de evaluación cuando la fuente lo haga |
+| remediation | instrucción correctiva / remediación | Preferir explicación funcional; nunca prometer repetición de prueba |
+| reassessment | reevaluación | Usar solo cuando la norma aplicable permita una evaluación posterior |
+| competency | competencia demostrada | No confundir con jurisdicción o autoridad legal |
+| qualification | cualificación | Precisar el área; no equivale a dominio o pericia completa |
+| certification | certificación | Estado dentro del marco de DCJS; no usar como sinónimo informal de graduación |
+| certification examination | examen de certificación | Conservar el nombre oficial inglés cuando DCJS lo proporcione |
+| passing standard | estándar mínimo para aprobar | Debe provenir de la autoridad que controla la evaluación |
+| probationary officer | agente en período probatorio | Es término de empleo/agencia; no equivale automáticamente a recluta no certificado |
+| graduation | graduación | Hito de la academia; no sustituye requisitos de certificación |
+| academy graduate | persona graduada de la academia | No presume por sí solo certificación ni autorización independiente |
+| Field Training Officer (FTO) | Oficial de Entrenamiento de Campo (FTO) | Introducir el término inglés y la sigla; la estructura local puede variar |
 | investigative detention | detención investigativa | Distinguir de arresto |
 | emergency custody order (ECO) | orden de custodia de emergencia (ECO) | Conservar sigla y término jurídico de Virginia en inglés |
 | evidence | evidencia / prueba | Elegir según contexto investigativo o judicial |
