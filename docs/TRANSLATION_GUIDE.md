@@ -75,13 +75,18 @@ Use el par bilingüe en la primera introducción significativa; después, el té
 | personal property / safekeeping property | bienes personales / bienes bajo custodia protectora | Distinguir de evidencia y contrabando |
 | booking | procesamiento de ingreso | El proceso y vocabulario varían por centro receptor |
 | magistrate | magistrado de Virginia | Funcionario judicial independiente; no asumir equivalencia institucional extranjera |
+| person in custody / prisoner | persona bajo custodia | Preferir lenguaje centrado en la persona; usar *prisoner* solo cuando el contexto jurídico o una fuente lo exija |
 | emergency protective order | orden de protección de emergencia | Conservar el término inglés al introducir y verificar vigencia exacta |
+| preliminary protective order | orden de protección preliminar | Conservar PPO y el término inglés al introducir; distinguir de EPO y orden posterior a audiencia |
 | predominant physical aggressor | agresor físico predominante | Término estatutario; no equivale a quien parezca más grande o más alterado |
+| high-risk encounter | encuentro de alto riesgo | Descripción conceptual amplia, no clasificación universal ni invitación a añadir tácticas |
 | emergency medical services (EMS) | servicios médicos de emergencia (EMS) | Conservar sigla profesional inglesa cuando resulte útil |
-| cardiopulmonary resuscitation (CPR) | reanimación cardiopulmonar (RCP/CPR) | Preparar decisión sobre siglas; Virginia opera profesionalmente en inglés |
-| automated external defibrillator (AED) | desfibrilador externo automático (DEA/AED) | Introducir ambas siglas; no sustituye instrucción certificada |
+| cardiopulmonary resuscitation (CPR) | reanimación cardiopulmonar (CPR) | Conservar CPR como sigla principal por el entorno profesional en inglés; RCP puede explicarse como variante pública |
+| automated external defibrillator (AED) | desfibrilador externo automático (AED) | Conservar AED como sigla principal; DEA puede aparecer en materiales públicos en español |
 | naloxone | naloxona | Medicamento de reversión de sobredosis; no reemplaza EMS |
 | severe bleeding | hemorragia grave | Mantener lenguaje público de primeros auxilios, no procedimiento avanzado |
+| tourniquet | torniquete | Mencionar únicamente dentro de capacitación formal; no ampliar instrucciones de aplicación |
+| universal / standard precautions | precauciones universales / estándar | Explicar que *universal* es terminología histórica y seguir el marco moderno que enseñe la fuente o el curso |
 | occupational exposure | exposición ocupacional | Contexto de sangre/fluidos y seguimiento médico laboral |
 
 ## Adapt, do not transpose
