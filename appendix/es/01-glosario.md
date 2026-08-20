@@ -173,3 +173,25 @@ La expresión española facilita el aprendizaje; la inglesa importa porque la ac
 **Precauciones universales / estándar — universal / standard precautions.** Marcos de prevención que aplican controles apropiados ante material potencialmente infeccioso; *universales* es el término histórico y debe seguirse la terminología vigente. Véase Capítulo 15.
 
 **Torniquete — tourniquet.** Dispositivo de control de determinadas hemorragias graves cuyo empleo debe aprenderse en instrucción formal aprobada. Véase Capítulo 15.
+
+**Agente en entrenamiento — trainee officer.** Agente que aplica los fundamentos de la academia bajo la orientación y evaluación del programa de campo; se distingue de una recluta de academia y de una agente en período probatorio. Véase Capítulo 20.
+
+**Patrullaje sin FTO inmediato — independent patrol / solo patrol.** Trabajo sin un FTO al lado que conserva supervisión, recursos y respaldo de la agencia; no afirma una fase local ni aislamiento literal. Véase Capítulo 21.
+
+**Capacitación en servicio — in-service training.** Capacitación profesional posterior a la formación inicial; se distingue entre requisitos obligatorios de DCJS, capacitación específica de la agencia y desarrollo especializado opcional. Véase Capítulo 21.
+
+**Trabajo por turnos — shift work.** Organización del trabajo en períodos que pueden incluir horas diurnas, vespertinas o nocturnas; el término no atribuye un horario determinado a JCCPD. Véanse Capítulos 20–21.
+
+**Horas extra — overtime.** Tiempo trabajado fuera del horario ordinario conforme a las reglas laborales aplicables; no permite inferir remuneración ni obligatoriedad local. Véanse Capítulos 20–21.
+
+**Comparecencia ante el tribunal — court appearance.** Presencia en un proceso judicial como denunciante, testigo, agente que efectuó el arresto, agente investigadora u otra función definida. Véanse Capítulos 20–21.
+
+**Testimonio — testimony.** Declaración prestada en un proceso judicial con deber de veracidad; exige distinguir observación, memoria, registros revisados y declaraciones ajenas. Véanse Capítulos 20–21.
+
+**Pase de lista / reunión informativa — roll call / briefing.** Reunión o intercambio de información al comienzo u otro momento del turno según la práctica de la agencia; no se afirma una práctica local. Véase Capítulo 20.
+
+**Programa de Asistencia al Empleado — Employee Assistance Program (EAP).** Recurso laboral general que puede ofrecer orientación o acceso a servicios; se deben verificar localmente disponibilidad, acceso y confidencialidad. Véanse Capítulos 20–21.
+
+**Apoyo entre pares — peer support.** Apoyo ofrecido por colegas con preparación para esa función; no sustituye automáticamente la atención clínica ni garantiza los mismos límites de confidencialidad. Véanse Capítulos 20–21.
+
+**Crecimiento profesional continuo — continuing professional development.** Aprendizaje sostenido sobre ley, política, destrezas, criterio y bienestar durante la carrera; no es sinónimo de un requisito reglamentario concreto. Véase Capítulo 21.
