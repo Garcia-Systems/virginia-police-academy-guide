@@ -12,6 +12,11 @@ for lang,cfg in m.BOOKS.items():
  data=(ROOT/'dist'/cfg['output']).read_bytes()
  assert data.startswith(b'%PDF-1.7') and data.rstrip().endswith(b'%%EOF')
  assert b'/MediaBox [0 0 612 792]' in data and b'/Subtype /Link' in data
+ # Link labels are blue text runs inside a line-oriented text object; ordinary
+ # text resumes in black, and annotations remain confined to measured labels.
+ assert b'0.000 0.000 0.933 rg (' in data
+ assert re.search(rb'BT /F1 10\.5 Tf [^\r\n]+ 0 g \([^\r\n]*\) Tj 0\.000 0\.000 0\.933 rg \([^\r\n]+\) Tj 0 g \(',data)
+ assert re.search(rb'/Rect \[([\d.]+) ([\d.]+) ([\d.]+) ([\d.]+)\]',data)
  text=data.decode('latin1')
  positions=[]
  for fn in cfg['chapters']:
